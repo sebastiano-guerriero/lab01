@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "scripts": {
+    "clean": "rm -rf dist/*",
+    "watch:tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "watch:server": "live-server . --port=3000 --watch=*.html,dist/* --no-css-inject  --open",
+    "dev": "concurrently \"npm run watch:tailwind\" \"npm run watch:server\"",
+    "build": "rm -rf dist/* && npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.2",
+    "@tailwindcss/cli": "^4.0.0-alpha.3",
+    "tailwindcss": "^4.0.0-alpha.3"
+  },
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
