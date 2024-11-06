@@ -6,9 +6,19 @@
     <title>My Portfolio</title>
     <link href="./dist/output.css?v=1" rel="stylesheet">
 </head>
-<body class="bg-[#0A0A0A] text-[white]/80">
-  <h1 class="text-center mt-22 pt-8">
-      Welcome to my portfolio
-  </h1>
+<body class="bg-[#0A0A0A] text-[white]/80 antialiased font-mono font-[500]">
+  <main class="relative z-[2]">
+    <h1 class="text-center mt-22 pt-8">
+      Welcome to the digital lab of Sebastiano Guerriero
+    </h1>
+  </main>
+
+  <div data-name="noise-bg" class="absolute inset-0 z-[1] pointer-events-none [filter:url(#noise-bg-fx)_grayscale(100%)] opacity-10" aria-hidden="true">
+    <svg>
+      <filter id="noise-bg-fx">
+        <feTurbulence baseFrequency="0.8" />
+      </filter>
+    </svg>
+  </div>
 </body>
 </html>
