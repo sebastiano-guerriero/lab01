@@ -20,3 +20,15 @@
   --font-family-sans: Geist, ui-sans-serif, system-ui, sans-serif;
   --font-family-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
+
+@layer utilities {
+  .after\:mask-gradient::after {
+    mask: linear-gradient(black, black) padding-box, linear-gradient(black, black);
+    mask-composite: exclude;
+  }
+
+  /* .focus-ring {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  } */
+}
