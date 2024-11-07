@@ -7,8 +7,8 @@
   <link href="./dist/output.css?v=1" rel="stylesheet">
 </head>
 <body class="bg-[#0A0A0A] text-[white]/80 antialiased font-mono font-[500] text-[0.8125rem]">
-  <main class="relative z-[2] grid grid-cols-[24px_1fr_24px]">
-    <header class="mt-[24px] col-span-full grid grid-cols-subgrid border-y border-dashed border-white/[.08]">
+  <main class="relative z-[2] grid grid-cols-[24px_1fr_24px] grid-rows-[24px_auto_1fr] min-h-dvh sm:grid-cols-[1fr_33.75rem_1fr]">
+    <header class="col-span-full grid grid-cols-subgrid border-y border-dashed border-white/[.08] row-start-2">
       <div class="col-start-2 flex flex-col items-center gap-4 py-5">
         <a href="#0" class="rounded-md focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8]">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -23,7 +23,7 @@
         <h1 class="text-balance text-center selection:bg-white/80 selection:text-[#0A0A0A]">Welcome to the digital lab of Sebastiano Guerriero <span class="opacity-40 sm:block">— a product designer specialized in web apps.</span></h1>
   
         <a class="
-          relative h-[34px] bg-[#1F1F1F] ring-1 ring-white/[0.05] ring-inset rounded-full inline-flex place-items-center px-5 whitespace-nowrap shadow-sm transition select-none
+          relative h-[34px] bg-[#1F1F1F] ring-1 ring-white/[0.05] ring-inset rounded-full inline-flex place-items-center px-5 whitespace-nowrap shadow-sm transition select-none capitalize
           after:absolute after:inset-0 after:pointer-events-none after:rounded-[inherit] after:[background:linear-gradient(120deg,hsl(0_0%_100%/.4),hsl(0_0%_100%/0)_10%,hsl(0_0%_100%/0)_90%,hsl(0_0%_100%/0.25))_border-box] after:border after:border-transparent after:mask-gradient
           hover:ring-white/[0.1] hover:bg-[#242424] 
           focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8] 
@@ -33,6 +33,10 @@
 
     <div>
 
+    </div>
+
+    <div data-name="bg-grid" class="col-span-full row-span-full grid grid-cols-subgrid pointer-events-none" aria-hidden="true">
+      <div class="col-start-2 row-span-full border-x border-white/[.08]"></div>
     </div>
   </main>
 

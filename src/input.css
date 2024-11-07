@@ -19,6 +19,8 @@
 @theme {
   --font-family-sans: Geist, ui-sans-serif, system-ui, sans-serif;
   --font-family-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  --breakpoint-sm: 36.75rem;
 }
 
 @layer utilities {
