@@ -7,7 +7,7 @@
   <link href="./dist/output.css?v=1" rel="stylesheet">
 </head>
 <body class="bg-[#0A0A0A] text-[white]/80 antialiased font-mono font-[500] text-[0.8125rem]">
-  <main class="relative z-[2] grid grid-cols-[24px_1fr_24px] grid-rows-[24px_auto_1fr] min-h-dvh sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_16.125rem_36.75rem_16.125rem_1fr] md:gap-x-6">
+  <main class="relative z-[2] grid grid-cols-[24px_1fr_24px] grid-rows-[24px_auto_1fr] min-h-dvh sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_258px_540px_258px_1fr] md:gap-x-6">
     <!-- logo on desktop -->
     <div class="hidden col-start-2 row-start-2 row-span-full pt-[34px] justify-center items-start md:flex">
       <a href="#0" class="rounded-md focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8] md:sticky md:top-[34px] md:z-3">
@@ -63,9 +63,12 @@
       <li id="ui-experiment-1" class="col-span-full self-start grid grid-cols-subgrid border-b border-dashed border-white/[.08]">
         <div class="col-span-full self-start grid grid-cols-subgrid">
           <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-2" aria-hidden="true"></aside>
+
           <!-- experiment code -->
-          <div class="col-start-2 md:col-start-3 aspect-square">
-            
+          <div class="col-start-2 md:col-start-3">
+            <div data-js-experiment-zoom class="size-[540px] bg-amber-300" style="zoom: 100%;">
+              <span class="text-8xl">Test</span>
+            </div>
           </div>
           <!-- end experiment code -->
 
@@ -112,114 +115,6 @@
           </div>
         </div>
       </li>
-
-      <!-- experiment 2 -->
-      <li id="ui-experiment-2" class="col-span-full self-start grid grid-cols-subgrid border-b border-dashed border-white/[.08]">
-        <div class="col-span-full self-start grid grid-cols-subgrid">
-          <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-2" aria-hidden="true"></aside>
-          <!-- experiment code -->
-          <div class="col-start-2 md:col-start-3 aspect-square">
-            
-          </div>
-          <!-- end experiment code -->
-
-          <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-4" aria-hidden="true"></aside>
-        </div>
-
-        <!-- experiment meta -->
-        <div class="col-span-full grid grid-cols-subgrid border-t border-dashed border-white/[.08]">
-          <div class="relative col-start-2 p-6 md:col-start-3">
-            <h2 class="mb-4">UI Experiment #01</h2>
-  
-            <ul class="space-y-3 *:leading-[1]">
-              <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Icons</dt>
-                  <dd><a class="underline rounded-sm focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8]" href="nucleoapp.com">Nucleo</a></dd>
-                </dl>
-              </li>
-
-              <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Fonts</dt>
-                  <dd>Geist + Geist Mono</dd>
-                </dl>
-              </li>
-
-              <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Colors</dt>
-                  <dd></dd>
-                </dl>
-              </li>
-            </ul>
-
-            <a href="#ui-experiment-2" class="absolute top-6 right-6">
-              <svg class="size-[18px]" viewBox="0 0 18 18">
-                <title>link</title>
-                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
-                  <path d="M8.5,6.827c-.352,.168-.682,.398-.973,.69l-.01,.01c-1.381,1.381-1.381,3.619,0,5l2.175,2.175c1.381,1.381,3.619,1.381,5,0l.01-.01c1.381-1.381,1.381-3.619,0-5l-.931-.931"></path>
-                  <path d="M9.5,11.173c.352-.168,.682-.398,.973-.69l.01-.01c1.381-1.381,1.381-3.619,0-5l-2.175-2.175c-1.381-1.381-3.619-1.381-5,0l-.01,.01c-1.381,1.381-1.381,3.619,0,5l.931,.931"></path>
-                </g>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </li>
-
-      <!-- experiment 3 -->
-      <li id="ui-experiment-3" class="col-span-full self-start grid grid-cols-subgrid border-b border-dashed border-white/[.08]">
-        <div class="col-span-full self-start grid grid-cols-subgrid">
-          <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-2" aria-hidden="true"></aside>
-          <!-- experiment code -->
-          <div class="col-start-2 md:col-start-3 aspect-square">
-            
-          </div>
-          <!-- end experiment code -->
-
-          <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-4" aria-hidden="true"></aside>
-        </div>
-
-        <!-- experiment meta -->
-        <div class="col-span-full grid grid-cols-subgrid border-t border-dashed border-white/[.08]">
-          <div class="relative col-start-2 p-6 md:col-start-3">
-            <h2 class="mb-4">UI Experiment #01</h2>
-  
-            <ul class="space-y-3 *:leading-[1]">
-              <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Icons</dt>
-                  <dd><a class="underline rounded-sm focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8]" href="nucleoapp.com">Nucleo</a></dd>
-                </dl>
-              </li>
-
-              <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Fonts</dt>
-                  <dd>Geist + Geist Mono</dd>
-                </dl>
-              </li>
-
-              <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Colors</dt>
-                  <dd></dd>
-                </dl>
-              </li>
-            </ul>
-
-            <a href="#ui-experiment-3" class="absolute top-6 right-6">
-              <svg class="size-[18px]" viewBox="0 0 18 18">
-                <title>link</title>
-                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
-                  <path d="M8.5,6.827c-.352,.168-.682,.398-.973,.69l-.01,.01c-1.381,1.381-1.381,3.619,0,5l2.175,2.175c1.381,1.381,3.619,1.381,5,0l.01-.01c1.381-1.381,1.381-3.619,0-5l-.931-.931"></path>
-                  <path d="M9.5,11.173c.352-.168,.682-.398,.973-.69l.01-.01c1.381-1.381,1.381-3.619,0-5l-2.175-2.175c-1.381-1.381-3.619-1.381-5,0l-.01,.01c-1.381,1.381-1.381,3.619,0,5l.931,.931"></path>
-                </g>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </li>
     </ul>
 
     <!-- background grid -->
@@ -238,5 +133,6 @@
       </filter>
     </svg>
   </figure>
+  <script src="./src/main.js"></script>
 </body>
 </html>
