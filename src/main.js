@@ -58,5 +58,37 @@ const initZoomExperiment = () => {
   updateZoom();
 };
 
+/*
+ * Color Clipboard Copy
+ * Copies the background color of clicked elements to clipboard
+ */
+const initColorCopy = () => {
+  const colorButtons = document.querySelectorAll('[data-js-copy-color-to-clip]');
+  if (!colorButtons.length) return;
+
+  colorButtons.forEach(button => {
+    button.addEventListener('click', async () => {
+      const computedStyle = window.getComputedStyle(button);
+      const bgColor = computedStyle.backgroundColor;
+      
+      // Convert RGB to HEX
+      const rgb = bgColor.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+      const hex = '#' + rgb.slice(1).map(n => {
+        const hex = parseInt(n).toString(16);
+        return hex.length === 1 ? '0' + hex : hex;
+      }).join('').toUpperCase();
+
+      try {
+        await navigator.clipboard.writeText(hex);
+      } catch (err) {
+        console.error('Failed to copy color:', err);
+      }
+    });
+  });
+};
+
 // Initialize when DOM is ready
-document.addEventListener('DOMContentLoaded', initZoomExperiment);
+document.addEventListener('DOMContentLoaded', () => {
+  initZoomExperiment();
+  initColorCopy();
+});
