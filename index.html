@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lab01 - Welcome to the digital lab of Sebastiano Guerriero</title>
-  <link href="./dist/output.css?v=1" rel="stylesheet">
+  <link href="assets/css/style.css?v=1" rel="stylesheet">
 </head>
-<body class="bg-[#0A0A0A] text-[white]/80 antialiased font-mono font-[500] text-[0.8125rem]">
-  <main class="relative z-[2] grid grid-cols-[24px_1fr_24px] grid-rows-[24px_auto_1fr] min-h-dvh sm:grid-cols-[1fr_33.75rem_1fr] md:grid-cols-[1fr_258px_540px_258px_1fr] md:gap-x-6">
+<body>
+  <main style="--pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
     <!-- logo on desktop -->
-    <div class="hidden col-start-2 row-start-2 row-span-full pt-[34px] justify-center items-start md:flex">
-      <a href="#0" class="rounded-md focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8] md:sticky md:top-[34px] md:z-3">
+    <div style="--d: none; --col-start: 2; --row: 2/-1; --pt: 34px; --just-cont: center; --align-items: start; --d--at-md: flex;">
+      <a href="#0" class="logo" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 34px;">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
           <title>Back to top</title>
           <path d="M25 8.5L31 5.5V26H25V8.5Z" fill="white" fill-opacity="0.8"/>
@@ -22,9 +22,9 @@
     </div>
 
     <!-- header on mobile -->
-    <header class="col-span-full grid grid-cols-subgrid border-y border-dashed border-white/[.08] row-start-2 md:h-[100px]">
-      <div class="col-start-2 flex flex-col items-center gap-4 p-6 md:col-start-3 md:justify-center">
-        <a href="#0" class="rounded-md focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8] md:hidden">
+    <header style="--col: 1/-1; --d: grid; --grid-tem-cols: subgrid; --bd-y: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08); --row-start: 2; --h--at-md: 100px;">
+      <div style="--col-start: 2; --d: flex; --fx-direction: column; --align-items: center; --gap: 1rem; --p: 1.5rem; --col-start--at-md: 3; --just-cont--at-md: center;">
+        <a href="#0" class="logo" style="--ol--focus: ring; --d--at-md: none;">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
             <title>Back to top</title>
             <path d="M25 8.5L31 5.5V26H25V8.5Z" fill="white" fill-opacity="0.8"/>
@@ -34,82 +34,69 @@
           </svg>
         </a>
   
-        <h1 class="text-balance text-center selection:bg-white/80 selection:text-[#0A0A0A]">Welcome to the digital lab of Sebastiano Guerriero <span class="opacity-40 sm:block">— a product designer specialized in web apps.</span></h1>
+        <h1 style="--t-wrap: balance; --t-align: center; --bg--selection: oklch(100% 0 0 / .8); --color--selection: #0A0A0A; --lh: 1.4;">Welcome to the digital lab of Sebastiano Guerriero <span style="--op: .4; --d--at-sm: block; --bg--selection: oklch(100% 0 0 / .8); --color--selection: #0A0A0A;">— a product designer specialized in web apps.</span></h1>
   
-        <a class="
-          relative h-[34px] bg-[#1F1F1F] ring-1 ring-white/[0.05] ring-inset rounded-full inline-flex place-items-center px-5 whitespace-nowrap shadow-sm transition select-none capitalize
-          after:absolute after:inset-0 after:pointer-events-none after:rounded-[inherit] after:[background:linear-gradient(120deg,hsl(0_0%_100%/.4),hsl(0_0%_100%/0)_10%,hsl(0_0%_100%/0)_90%,hsl(0_0%_100%/0.25))_border-box] after:border after:border-transparent after:mask-gradient
-          hover:ring-white/[0.1] hover:bg-[#242424] 
-          focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8] 
-          active:translate-y-px
-          md:hidden" href="mailto:se.guerriero@gmail.com">Get in touch</a>
+        <a class="btn" style="--ol--focus: ring; --d--at-md: none;" href="mailto:se.guerriero@gmail.com">Get in touch</a>
       </div>
     </header>
 
     <!-- cta on desktop -->
-    <div class="hidden col-start-4 row-start-2 row-span-full justify-center items-start pt-[33px] md:flex">
-      <a class="
-      relative h-[34px] bg-[#1F1F1F] ring-1 ring-white/[0.05] ring-inset rounded-full inline-flex place-items-center px-5 whitespace-nowrap shadow-sm transition select-none capitalize
-      after:absolute after:inset-0 after:pointer-events-none after:rounded-[inherit] after:[background:linear-gradient(120deg,hsl(0_0%_100%/.4),hsl(0_0%_100%/0)_10%,hsl(0_0%_100%/0)_90%,hsl(0_0%_100%/0.25))_border-box] after:border after:border-transparent after:mask-gradient
-      hover:ring-white/[0.1] hover:bg-[#242424] 
-      focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8] 
-      active:translate-y-px
-      md:sticky md:top-[33px] md:z-3" href="mailto:se.guerriero@gmail.com">Get in touch</a>
+    <div style="--d: none; --col-start: 4; --row-start: 2; --row: 1/-1; --just-cont: center; --align-items: start; --pt: 33px; --d--at-md: flex;">
+      <a class="btn" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 33px; --z--at-md: 3;" href="mailto:se.guerriero@gmail.com">Get in touch</a>
     </div>
 
     <!-- experiments -->
-    <ul class="col-span-full grid grid-cols-subgrid row-start-3">
+    <ul style="--col: 1/-1; --d: grid; --grid-tem-cols: subgrid; --row-start: 3;">
       <!-- experiment 1 -->
-      <li id="ui-experiment-1" class="col-span-full self-start grid grid-cols-subgrid border-b border-dashed border-white/[.08]">
-        <div class="col-span-full self-start grid grid-cols-subgrid">
-          <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-2" aria-hidden="true"></aside>
+      <li id="ui-experiment-1" style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid; --bd-bottom: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08);">
+        <div style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid;">
+          <aside class="experiment-aside" style="--col-start--at-md: 2;" aria-hidden="true"></aside>
 
           <!-- experiment code -->
-          <div class="col-start-2 md:col-start-3">
-            <div data-js-experiment-zoom class="size-[540px] bg-amber-300" style="zoom: 100%;">
-              <span class="text-8xl">Test</span>
+          <div style="--col-start: 2;  --col-start--at-md: 3;">
+            <div data-js-experiment-zoom style="--size: 540px; --bg: amber; zoom: 100%;">
             </div>
           </div>
           <!-- end experiment code -->
 
-          <aside class="bg-[url('../src/assets/img/bg-stripes.svg')] [clip-path:inset(2px)] md:col-start-4" aria-hidden="true"></aside>
+          <aside class="experiment-aside" style="--col-start--at-md: 4;" aria-hidden="true"></aside>
         </div>
 
         <!-- experiment meta -->
-        <div class="col-span-full grid grid-cols-subgrid border-t border-dashed border-white/[.08]">
-          <div class="relative col-start-2 p-6 md:col-start-3">
-            <h2 class="mb-4">UI Experiment #01</h2>
+        <div style="--col: 1/-1; --d: grid; --grid-tem-cols: subgrid; --bd-t: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08);">
+          <div style="--pos: relative; --col-start: 2; --p: 1.5rem; --col-start--at-md: 3;">
+            <h2 style="--mb: 1rem;">UI Experiment #01</h2>
   
-            <ul class="space-y-3 *:leading-[1]">
+            <ul class="meta-list" style="--lis: none;">
               <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Icons</dt>
-                  <dd><a class="underline rounded-sm focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8]" href="https://nucleoapp.com/">Nucleo</a></dd>
+                <dl>
+                  <dt>Icons</dt>
+                  <dd><a class="link" style="--ol--focus: ring;" href="https://nucleoapp.com/">Nucleo</a></dd>
                 </dl>
               </li>
 
               <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Fonts</dt>
+                <dl>
+                  <dt>Fonts</dt>
                   <dd>Geist + Geist Mono</dd>
                 </dl>
               </li>
 
               <!-- colors -->
               <li>
-                <dl class="grid grid-cols-[64px_auto]">
-                  <dt class="opacity-40">Colors</dt>
-                  <dd class="flex">
-                    <button class="bg-[#AA915D] size-[10px] cursor-pointer shadow-[inset_0_1px_0_oklch(100%_0_0/.2)] active:translate-y-px" data-js-copy-color-to-clip><span class="sr-only">Copy color to clipboard</span></button>
-                    <button class="bg-[#493821] size-[10px] cursor-pointer shadow-[inset_0_1px_0_oklch(100%_0_0/.2)] active:translate-y-px" data-js-copy-color-to-clip><span class="sr-only">Copy color to clipboard</span></button>
+                <dl>
+                  <dt>Colors</dt>
+                  <dd style="--d: flex;">
+                    <button class="btn-color" style="--bg: #AA915D" data-js-copy-color-to-clip><span style="--sr: only;">Copy color to clipboard</span></button>
+                    <button class="btn-color" style="--bg: #493821" data-js-copy-color-to-clip><span style="--sr: only;">Copy color to clipboard</span></button>
                   </dd>
                 </dl>
               </li>
             </ul>
 
             <!-- link -->
-            <a href="#ui-experiment-1" class="absolute top-6 right-6 rounded-sm focus-visible:outline-[1.5px] focus-visible:outline-offset-[3px] focus-visible:outline-white/[.8]">
-              <svg class="size-[18px]" viewBox="0 0 18 18">
+            <a href="#ui-experiment-1" class="experiment-link" style="--ol--focus: ring; --pos: absolute; --t: 1.5rem; --r: 1.5rem;">
+              <svg style="--size: 18px;" viewBox="0 0 18 18">
                 <title>link</title>
                 <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
                   <path d="M8.5,6.827c-.352,.168-.682,.398-.973,.69l-.01,.01c-1.381,1.381-1.381,3.619,0,5l2.175,2.175c1.381,1.381,3.619,1.381,5,0l.01-.01c1.381-1.381,1.381-3.619,0-5l-.931-.931"></path>
@@ -123,21 +110,21 @@
     </ul>
 
     <!-- background grid -->
-    <div class="col-span-full row-span-full grid grid-cols-subgrid pointer-events-none" aria-hidden="true">
-      <div class="col-start-2 row-span-full border-x border-white/[.08]"></div>
-      <div class="hidden col-start-3 row-span-full border-x border-white/[.08] md:block"></div>
-      <div class="hidden col-start-4 row-span-full border-x border-white/[.08] md:block"></div>
+    <div style="--col: 1/-1; --row: 1/-1; --d: grid; --grid-tem-cols: subgrid; --pointer-ev: none;" aria-hidden="true">
+      <div style="--col-start: 2; --row: 1/-1; --bd-x: 1px; --bd-color: oklch(100% 0 0 / .08)"></div>
+      <div style="--d: none; --col-start: 3; --row: 1/-1; --bd-x: 1px; --bd-color: oklch(100% 0 0 / .08); --d--at-md: block;"></div>
+      <div style="--d: none; --col-start: 4; --row: 1/-1; --bd-x: 1px; --bd-color: oklch(100% 0 0 / .08); --d--at-md: block;"></div>
     </div>
   </main>
 
   <!-- background noise -->
-  <figure data-name="noise-bg" class="absolute inset-0 z-[1] pointer-events-none [filter:url(#noise-bg-fx)_grayscale(100%)] opacity-10" aria-hidden="true">
+  <figure class="bg-noise" aria-hidden="true">
     <svg>
       <filter id="noise-bg-fx">
         <feTurbulence baseFrequency="0.8" />
       </filter>
     </svg>
   </figure>
-  <script src="./src/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
