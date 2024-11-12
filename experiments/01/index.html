@@ -10,10 +10,10 @@
   <link href="assets/css/experiment-01.css?v=1" rel="stylesheet">
 </head>
 <body>
-  <main style="--size: 540px; --pos: relative; --d: flex; --just-cont: center; --align-items: center;">
+  <main style="--size: 540px; --pos: relative; --d: flex; --just-cont: center; --align-items: center; --ov: hidden;">
     <div class="container">
       <header class="header">
-        <h1 class="title">Appearance</h1>
+        <h2 class="title">Appearance</h2>
         <button class="btn-primary btn-icon">
           <svg style="--size: 18px;" viewBox="0 0 18 18">
             <title>xmark</title>
@@ -24,6 +24,13 @@
           </svg>
         </button>
       </header>
+
+      <div style="--p: 24px;">
+        <div>
+          <h3 class="text">Theme</h3>
+          <p class="text-subtle">Customize UI colors</p>
+        </div>
+      </div>
 
       <footer class="footer">
         <ul style="--lis: none; --d: grid; --grid-tem-cols: 1fr 1fr; --col-gap: 12px;">
@@ -40,6 +47,17 @@
 
     <figure style="--pos: absolute; --inset: 0; --ar: 1/1; --z: 1;">
       <img data-display="gold" style="-webkit-user-drag: none" src="assets/img/bg-gold .webp" alt="Gold theme background">
+    </figure>
+
+    <div class="light light--top" style="--t: -15px; --l: 14px;" aria-hidden="true"></div>
+    <div class="light light--bottom" style="--b: -50px; --r: -30px;" aria-hidden="true"></div>
+
+    <figure class="bg-noise" aria-hidden="true">
+      <svg>
+        <filter id="noise-bg-fx">
+          <feTurbulence baseFrequency="0.8" />
+        </filter>
+      </svg>
     </figure>
   </main>
 </body>
