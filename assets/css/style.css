@@ -52,7 +52,7 @@ a {
   display: inline-flex;
   place-items: center;
   height: 34px;
-  background: #1F1F1F;
+  background: hsl(0 0% 15%);
   border-radius: 50em;
   padding-inline: 20px;
   white-space: nowrap;
@@ -74,7 +74,7 @@ a {
     inset: 0;
     pointer-events: none;
     border-radius: inherit;
-    background: linear-gradient(120deg , hsl(0 0% 100% / .4), hsl(0 0% 100% / 0) 10%, hsl(0 0% 100% / 0) 90%, hsl(0 0% 100% / 0.25)) border-box;
+    background: linear-gradient(120deg , hsl(0 0% 100% / .6), hsl(0 0% 100% / 0) 10%, hsl(0 0% 100% / 0) 90%, hsl(0 0% 100% / 0.25)) border-box;
     border: 1px solid transparent;
     -webkit-mask: linear-gradient(black, black) padding-box, linear-gradient(black, black);
             mask: linear-gradient(black, black) padding-box, linear-gradient(black, black);
@@ -160,7 +160,6 @@ iframe {
   height: 100%;
   position: absolute;
   inset: 0;
-  transform-origin: 0 0;
 }
 /* #endregion */
 
