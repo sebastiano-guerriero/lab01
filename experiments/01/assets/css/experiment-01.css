@@ -16,7 +16,6 @@ html {
 }
 
 body {
-  background: white;
   font-family: system-ui;
   font-weight: 500;
   color: black;
@@ -139,6 +138,7 @@ a {
 [style*="--translate:"] { translate: var(--translate); }
 [style*="--rotate:"] { rotate: var(--rotate); }
 [style*="--scale:"] { scale: var(--scale); }
+[style*="--origin:"] { transform-origin: var(--origin); }
 [style*="--pointer-ev:"] { pointer-events: var(--pointer-ev); }
 [style*="--iso:"] { isolation: var(--iso); }
 [style*="--bd-filter:"] { backdrop-filter: var(--bd-filter); }

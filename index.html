@@ -52,12 +52,10 @@
         <div style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid;">
           <aside class="experiment-aside" style="--col-start--at-md: 2;" aria-hidden="true"></aside>
 
-          <!-- experiment code -->
+          <!-- experiment -->
           <div style="--col-start: 2;  --col-start--at-md: 3;">
-            <div data-js-experiment-zoom style="--size: 540px; --bg: amber; zoom: 100%;">
-            </div>
+            <iframe src="experiments/01/index.html" style="--size: 540px; zoom: 100%" data-js-experiment-zoom title="UI Experiment #01" loading="lazy"></iframe>
           </div>
-          <!-- end experiment code -->
 
           <aside class="experiment-aside" style="--col-start--at-md: 4;" aria-hidden="true"></aside>
         </div>
@@ -118,13 +116,21 @@
   </main>
 
   <!-- background noise -->
-  <figure class="bg-noise" aria-hidden="true">
+  <figure class="bg-noise" style="--pos: absolute; --z: 1;" aria-hidden="true">
     <svg>
       <filter id="noise-bg-fx">
         <feTurbulence baseFrequency="0.8" />
       </filter>
     </svg>
   </figure>
+
+  <div style="--pos: absolute; --inset: 0; --z: 1; --ov: hidden; --pointer-ev: none;" aria-hidden="true">
+    <div style="--max-w--at-md: 1104px; --mx--at-md: auto;">
+      <div style="--translate: 0 -90px;">
+        <div style="--w: 740px; --h: 180px; --bg: white; --radius: 50%; --rotate: 45deg; --translate: -300px -300px; --origin: left 50%; --filter: blur(150px); --op: 8%; --translate--at-sm: -200px -300px; --translate--at-md: -150px -200px;"></div>
+      </div>
+    </div>
+  </div>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
