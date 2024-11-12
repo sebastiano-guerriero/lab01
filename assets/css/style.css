@@ -10,11 +10,6 @@
   border: 0;
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 @font-face {
   font-family: 'Geist Mono';
   src: url('../fonts/GeistMono.woff2') format('woff2');
@@ -23,6 +18,8 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   background: #0A0A0A;
   font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
   font-weight: 500;
@@ -30,9 +27,17 @@ body {
   font-size: 0.8125rem;
 }
 
+h1, h2, h3, h4, h5, h6, input, button, textarea, select {
+  font: inherit;
+}
+
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 a {

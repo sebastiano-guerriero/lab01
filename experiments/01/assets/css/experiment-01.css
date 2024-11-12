@@ -34,12 +34,39 @@ a {
 
 /* #region (experiment) */
 :root {
-  --color-bg-light: #BA965A;
-  --color-bg: #BA965A;
-  --color-contrast-higher: #2F2212;
-  --color-contrast-highest: #101010;
-
   --f-family-heading: "Geist", system-ui, sans-serif;
+}
+
+.main {
+  position: relative;
+  width: 540px;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &:has(input#theme-picker-gold:checked) {
+    --color-bg-light: #BA965A;
+    --color-bg: #BA965A;
+    --color-contrast-higher: #2F2212;
+    --color-contrast-highest: #101010;
+
+    :is([data-display=dark], [data-display=light]) {
+      display: none;
+    }
+  }
+
+  &:has(input#theme-picker-dark:checked) {
+    --color-bg-light: #1F1F1F;
+    --color-bg: #111111;
+    --color-contrast-higher: #fff;
+    --color-contrast-highest: #fff;
+
+    :is([data-display=gold], [data-display=light]) {
+      display: none;
+    }
+  }
 }
 
 .container {
@@ -59,12 +86,19 @@ a {
     inset: 0;
     border-radius: inherit;
     pointer-events: none;
-    background: linear-gradient(160deg, hsl(from #FFE38F h s l / .97), hsl(from #372E22 h s l / .46) 19%, hsl(from #886C4A h s l / 1) 70%, hsl(from #FFE38F h s l / .37)) border-box;
     border: 1.25px solid transparent;
-    mix-blend-mode: overlay;
     mask: linear-gradient(black, black) padding-box, linear-gradient(black, black);
     mask-composite: exclude;
   }
+}
+
+.main:has(input#theme-picker-gold:checked) .container::after {
+  background: linear-gradient(160deg, hsl(from #FFE38F h s l / .97), hsl(from #372E22 h s l / .46) 19%, hsl(from #886C4A h s l / 1) 70%, hsl(from #FFE38F h s l / .37)) border-box;
+  mix-blend-mode: overlay;
+}
+
+.main:has(input#theme-picker-dark:checked) .container::after {
+  background: linear-gradient(160deg, hsl(from white h s l / .30), hsl(from black h s l / .16) 37%, hsl(from black h s l / 0.25) 70%, hsl(from white h s l / .17)) border-box;
 }
 
 .header {
@@ -79,7 +113,10 @@ a {
   font-weight: normal;
   letter-spacing: -0.025em;
   color: hsl(from var(--color-contrast-higher) h s l / .85);
-  text-shadow: 0 1px 0 hsl(from white h s l / .2);
+  
+  .main:has(input#theme-picker-gold:checked) & {
+    text-shadow: 0 1px 0 hsl(from white h s l / .2);
+  }
 }
 
 .btn-primary,
@@ -105,31 +142,59 @@ a {
 }
 
 .btn-primary {
-  color: hsl(from var(--color-contrast-higher) h s l / .83);
-  text-shadow: 0 1px 0 hsl(from white h s l / .3);
-  background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.25), hsl(from white h s l / 0)), var(--color-bg-light);
-  background-blend-mode: overlay, normal;
-  box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 40px 11px rgba(136, 97, 46, 0.01), 0px 26px 10px rgba(136, 97, 46, 0.05), 0px 14px 9px rgba(136, 97, 46, 0.17), 0px 6px 6px rgba(136, 97, 46, 0.29), 0px 2px 4px rgba(136, 97, 46, 0.33);
-
   &::after {
     content: '';
     position: absolute;
     inset: 0;
     border-radius: inherit;
     pointer-events: none;
-    background: linear-gradient(180deg, hsl(from white h s l / .65), hsl(from #5B4B32 h s l / .68) 41%, hsl(from #7F6845 h s l / .46) 75%, hsl(from white h s l / .25)) border-box;
     border: 1.5px solid transparent;
-    mix-blend-mode: overlay;
     mask: linear-gradient(black, black) padding-box, linear-gradient(black, black);
     mask-composite: exclude;
   }
+}
 
-  &:hover {
-    background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.35), hsl(from white h s l / 0)), var(--color-bg-light);
+.main:has(input#theme-picker-gold:checked) {
+  .btn-primary {
+    color: hsl(from var(--color-contrast-higher) h s l / .83);
+    text-shadow: 0 1px 0 hsl(from white h s l / .3);
+    background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.25), hsl(from white h s l / 0)), var(--color-bg-light);
+    background-blend-mode: overlay, normal;
+    box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 40px 11px rgba(136, 97, 46, 0.01), 0px 26px 10px rgba(136, 97, 46, 0.05), 0px 14px 9px rgba(136, 97, 46, 0.17), 0px 6px 6px rgba(136, 97, 46, 0.29), 0px 2px 4px rgba(136, 97, 46, 0.33);
+
+    &::after {
+      background: linear-gradient(180deg, hsl(from white h s l / .65), hsl(from #5B4B32 h s l / .68) 41%, hsl(from #7F6845 h s l / .46) 75%, hsl(from white h s l / .25)) border-box;
+      mix-blend-mode: overlay;
+    }
+
+    &:hover {
+      background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.35), hsl(from white h s l / 0)), var(--color-bg-light);
+    }
+  
+    &:active {
+      box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 20px 10px rgba(136, 97, 46, 0.01), 0px 12px 10px rgba(136, 97, 46, 0.05), 0px 6px 9px rgba(136, 97, 46, 0.17), 0px 2px 4px rgba(136, 97, 46, 0.29), 0px 1px 2px rgba(136, 97, 46, 0.33);
+    }
   }
+}
 
-  &:active {
-    box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 20px 10px rgba(136, 97, 46, 0.01), 0px 12px 10px rgba(136, 97, 46, 0.05), 0px 6px 9px rgba(136, 97, 46, 0.17), 0px 2px 4px rgba(136, 97, 46, 0.29), 0px 1px 2px rgba(136, 97, 46, 0.33);
+.main:has(input#theme-picker-dark:checked) {
+  .btn-primary {
+    color: hsl(from var(--color-contrast-higher) h s l / .83);
+    background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.05), hsl(from white h s l / 0)), hsl(from var(--color-bg-light) h s l / .8);
+    box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 40px 11px rgba(0, 0, 0, 0.01), 0px 26px 10px rgba(0, 0, 0, 0.05), 0px 14px 9px rgba(0, 0, 0, 0.17), 0px 6px 6px rgba(0, 0, 0, 0.29), 0px 2px 4px rgba(0, 0, 0, 0.33);
+
+    &::after {
+      background: linear-gradient(180deg, hsl(from white h s l / .65), hsl(from #5B4B32 h s l / .68) 41%, hsl(from #7F6845 h s l / .46) 75%, hsl(from white h s l / .25)) border-box;
+      mix-blend-mode: overlay;
+    }
+
+    &:hover {
+      background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.35), hsl(from white h s l / 0)), var(--color-bg-light);
+    }
+  
+    &:active {
+      box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 20px 10px rgba(136, 97, 46, 0.01), 0px 12px 10px rgba(136, 97, 46, 0.05), 0px 6px 9px rgba(136, 97, 46, 0.17), 0px 2px 4px rgba(136, 97, 46, 0.29), 0px 1px 2px rgba(136, 97, 46, 0.33);
+    }
   }
 }
 
