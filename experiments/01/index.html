@@ -26,7 +26,7 @@
       </header>
 
       <div style="--p: 24px;">
-        <div>
+        <div style="--mb: 44px;">
           <div style="--mb: 1rem;">
             <h3 class="text">Theme</h3>
             <p class="text-subtle">Customize UI colors</p>
@@ -57,6 +57,18 @@
               </figure>
             </label>
           </div>
+        </div>
+
+        <div style="--d: flex; --just-cont: space-between; --align-items: center;">
+          <label for="sidebar-switch" style="--d: flex; --fx-direction: column; --align-items: start; --us: none;">
+            <span class="text">Sidebar</span>
+            <span class="text-subtle">Make the sidebar transparent</span>
+          </label>
+
+          <label class="switch" for="sidebar-switch">
+            <input class="switch-input" type="checkbox" id="sidebar-switch">
+            <div class="switch-marker btn-primary" aria-hidden="true"></div>
+          </label>
         </div>
       </div>
 

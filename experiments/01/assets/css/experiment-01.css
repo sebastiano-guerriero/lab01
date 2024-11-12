@@ -46,7 +46,7 @@ a {
   position: relative;
   z-index: 2;
   width: 444px;
-  height: 444px;
+  height: 440px;
   background: hsl(from var(--color-bg) h s l / .85);
   backdrop-filter: blur(20px);
   border-radius: 24px;
@@ -89,13 +89,18 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   height: 38px;
   border-radius: 12px;
   transition: translate .1s;
 
   &:active {
     translate: 0 1px;
+  }
+
+  &:focus-visible {
+    outline: 1.5px solid var(--color-contrast-highest);
+    outline-offset: 2px;
+    transition: none;
   }
 }
 
@@ -118,6 +123,14 @@ a {
     mask: linear-gradient(black, black) padding-box, linear-gradient(black, black);
     mask-composite: exclude;
   }
+
+  &:hover {
+    background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.35), hsl(from white h s l / 0)), var(--color-bg-light);
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0px 20px 10px rgba(136, 97, 46, 0.01), 0px 12px 10px rgba(136, 97, 46, 0.05), 0px 6px 9px rgba(136, 97, 46, 0.17), 0px 2px 4px rgba(136, 97, 46, 0.29), 0px 1px 2px rgba(136, 97, 46, 0.33);
+  }
 }
 
 .btn-secondary {
@@ -131,8 +144,7 @@ a {
     z-index: -1;
     inset: 0;
     border-radius: inherit;
-    background: hsl(from var(--color-contrast-highest) h s l / .13);
-    mix-blend-mode: overlay;
+    background: hsl(from hsl(35 35% 43%) h s l / .78);
     pointer-events: none;
   }
 }
@@ -162,13 +174,18 @@ a {
 .theme-picker {
   display: flex;
   justify-content: space-between;
+  border-radius: 12px;
+
+  &:has(input:focus-visible):focus-within {
+    outline: 1.5px solid var(--color-contrast-highest);
+    outline-offset: 4.5px;
+    transition: none;
+  }
 }
 
 .theme-picker-btn {
   cursor: pointer;
 }
-
-
 
 .theme-picker-img-wrapper {
   position: relative;
@@ -187,7 +204,7 @@ a {
   display: none;
 }
 
-.theme-picker-btn:has(input[checked]) .theme-picker-img-wrapper::before {
+.theme-picker-btn:has(input:checked) .theme-picker-img-wrapper::before {
   display: block;
 }
 
@@ -250,6 +267,80 @@ a {
   filter: url(#noise-bg-fx) grayscale(100%);
   z-index: 10;
   mix-blend-mode: screen;
+}
+
+.switch {
+  --switch-w: 44px; /* width */
+  --switch-h: 22px; /* height */
+  --switch-radius: 50em; /* border-radius */
+  --switch-p: 3px; /* padding */
+  --switch-trans-duration: .2s;
+
+  position: relative;
+  display: block;
+  width: var(--switch-w);
+  height: var(--switch-h);
+  border-radius: var(--switch-radius);
+  padding: var(--switch-p);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: hsl(from var(--color-contrast-highest) h s l / .26);
+    z-index: -1;
+    mix-blend-mode: overlay;
+    box-shadow: 0 1px 0 hsl(from white h s l / .2), inset 0 1px 0 hsl(from black h s l / .07), inset 0 1px 4px hsl(from black h s l / .08);
+  }
+}
+
+.switch:has(.switch-input:checked) {
+  background: var(--color-contrast-highest); /* switch active background color */
+}
+
+.switch:has(.switch-input:focus-visible) {
+  /* focus effect */
+  outline: 1.5px solid var(--color-contrast-highest);
+  outline-offset: 1.5px;
+  transition: none;
+}
+
+.switch-input {
+  /* SR only */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.switch-marker {
+  height: calc(var(--switch-h) - var(--switch-p)*2);
+  width: calc(var(--switch-h) - var(--switch-p)*2);
+  border-radius: calc(var(--switch-radius) - var(--switch-p));
+
+  &:active {
+    translate: 0;
+  }
+}
+
+.switch:has(input:checked) .switch-marker {
+  transform: translateX(calc(var(--switch-w) - var(--switch-h)));
+}
+
+@media not (prefers-reduced-motion) {
+  .switch {
+    transition: all var(--switch-trans-duration);
+  }
+
+  .switch-marker {
+    transition: transform var(--switch-trans-duration);
+  }
 }
 /* #endregion */
 
@@ -395,7 +486,8 @@ a {
 }
 
 [style*="--ol--focus: ring"]:focus-visible {
-  outline: 1.5px solid oklch(100% 0 0 / .8);
-  outline-offset: 3px;
+  outline: 1.5px solid var(--color-contrast-highest);
+  outline-offset: 2px;
+  transition: none;
 }
 /* #endregion */
