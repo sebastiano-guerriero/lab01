@@ -27,8 +27,36 @@
 
       <div style="--p: 24px;">
         <div>
-          <h3 class="text">Theme</h3>
-          <p class="text-subtle">Customize UI colors</p>
+          <div style="--mb: 1rem;">
+            <h3 class="text">Theme</h3>
+            <p class="text-subtle">Customize UI colors</p>
+          </div>
+
+          <div class="theme-picker">
+            <label class="theme-picker-btn" for="theme-picker-dark"  aria-label="Dark theme">
+              <input id="theme-picker-dark" style="--sr: only;" type="radio" name="theme-picker" >
+          
+              <figure class="theme-picker-img-wrapper">
+                <img class="theme-picker-img" src="assets/img/theme-dark.png" alt="Dark theme preview">
+              </figure>
+            </label>
+
+            <label class="theme-picker-btn" for="theme-picker-light" aria-label="Light theme">
+              <input id="theme-picker-light" style="--sr: only;" type="radio" name="theme-picker">
+          
+              <figure class="theme-picker-img-wrapper">
+                <img class="theme-picker-img" src="assets/img/theme-light.png" alt="Light theme preview">
+              </figure>
+            </label>
+
+            <label class="theme-picker-btn" for="theme-picker-gold" aria-label="Golden theme">
+              <input id="theme-picker-gold" style="--sr: only;" type="radio" name="theme-picker" checked>
+          
+              <figure class="theme-picker-img-wrapper">
+                <img class="theme-picker-img" src="assets/img/theme-gold.png" alt="Golden theme preview">
+              </figure>
+            </label>
+          </div>
         </div>
       </div>
 

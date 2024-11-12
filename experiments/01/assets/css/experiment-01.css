@@ -159,6 +159,52 @@ a {
   color: hsl(from var(--color-contrast-higher) h s l / .5);
 }
 
+.theme-picker {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-picker-btn {
+  cursor: pointer;
+}
+
+
+
+.theme-picker-img-wrapper {
+  position: relative;
+}
+
+.theme-picker-img-wrapper::before, .theme-picker-img-wrapper::after {
+  content: '';
+  position: absolute;
+  border-radius: 15px;
+}
+
+.theme-picker-img-wrapper::before {
+  inset: -3px;
+  z-index: -2;
+  box-shadow: 0 0 0 1.5px white;
+  display: none;
+}
+
+.theme-picker-btn:has(input[checked]) .theme-picker-img-wrapper::before {
+  display: block;
+}
+
+.theme-picker-img-wrapper::after {
+  inset: -3px;
+  background: hsl(from var(--color-contrast-highest) h s l / .2);
+  mix-blend-mode: overlay;
+  z-index: -1;
+  box-shadow: 0 1px 0 hsl(from white h s l / .2), inset 0 1px 0 hsl(from black h s l / .07), inset 0 1px 4px hsl(from black h s l / .08);
+}
+
+.theme-picker-img {
+  width: 124px;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
 .footer {
   position: relative;
   margin-top: auto;
