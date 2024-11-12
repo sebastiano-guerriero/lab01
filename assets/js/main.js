@@ -14,48 +14,48 @@ const throttle = (func, limit) => {
 };
 
 /*
- * Responsive Zoom Scaling
- * Adjusts the zoom level of elements based on viewport width
- * Uses CSS zoom property for better text rendering
+ * Responsive Scale Adjustment
+ * Adjusts the scale of elements based on viewport width
+ * Uses CSS custom property for scaling
  */
 const initZoomExperiment = () => {
-  const zoomElements = document.querySelectorAll('[data-js-experiment-zoom]');
-  if (!zoomElements.length) return;
+  const scaleElements = document.querySelectorAll('[data-js-experiment-scale]');
+  if (!scaleElements.length) return;
 
-  // Constants for zoom calculation
+  // Constants for scale calculation
   const MIN_WIDTH = 320;
   const MAX_WIDTH = 588;
-  const MIN_ZOOM = 50;
-  const MAX_ZOOM = 100;
+  const MIN_SCALE = 0.5;
+  const MAX_SCALE = 1;
 
-  // Calculate and apply zoom
-  const updateZoom = () => {
+  // Calculate and apply scale
+  const updateScale = () => {
     const viewportWidth = document.documentElement.clientWidth;
     
     // Clamp viewport width between min and max
     const clampedWidth = Math.min(Math.max(viewportWidth, MIN_WIDTH), MAX_WIDTH);
     
-    // Calculate zoom factor (0 to 1)
+    // Calculate scale factor (0 to 1)
     const factor = (clampedWidth - MIN_WIDTH) / (MAX_WIDTH - MIN_WIDTH);
     
-    // Calculate zoom level
-    const zoomLevel = lerp(MIN_ZOOM, MAX_ZOOM, factor);
+    // Calculate scale level
+    const scaleLevel = lerp(MIN_SCALE, MAX_SCALE, factor);
     
-    // Apply zoom to all matching elements
-    zoomElements.forEach(element => {
-      element.style.zoom = `${zoomLevel}%`;
+    // Apply scale to all matching elements
+    scaleElements.forEach(element => {
+      element.style.setProperty('--scale', scaleLevel);
     });
   };
 
   // Create throttled update function
-  const throttledUpdate = throttle(updateZoom, 16); // ~60fps
+  const throttledUpdate = throttle(updateScale, 16); // ~60fps
 
   // Initialize ResizeObserver
   const resizeObserver = new ResizeObserver(throttledUpdate);
   resizeObserver.observe(document.documentElement);
 
   // Initial update
-  updateZoom();
+  updateScale();
 };
 
 /*
