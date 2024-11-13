@@ -71,6 +71,17 @@ ul, ol {
       display: none;
     }
   }
+
+  &:has(input#theme-picker-light:checked) {
+    --color-bg-light: oklch(77% 0 0);
+    --color-bg: oklch(77% 0 0);
+    --color-contrast-higher: black;
+    --color-contrast-highest: black;
+
+    :is([data-display=gold], [data-display=dark]) {
+      display: none;
+    }
+  }
 }
 
 .container {
@@ -105,7 +116,12 @@ ul, ol {
 }
 
 .main:has(input#theme-picker-dark:checked) .container::after {
-  background: linear-gradient(160deg, hsl(from white h s l / .30), hsl(from black h s l / .16) 37%, hsl(from black h s l / 0.25) 70%, hsl(from white h s l / .17)) border-box;
+  background: linear-gradient(160deg, hsl(from white h s l / .30), hsl(from white h s l / .02) 37%, hsl(from white h s l / 0.05) 70%, hsl(from white h s l / .1)) border-box;
+}
+
+.main:has(input#theme-picker-light:checked) .container::after {
+  background: linear-gradient(160deg, hsl(from white h s l / .77), hsl(from white h s l / 0.2) 19%, hsl(from white h s l / 0.2) 70%, hsl(from white h s l / .3)) border-box;
+  mix-blend-mode: overlay;
 }
 
 .header {
@@ -122,6 +138,10 @@ ul, ol {
   color: hsl(from var(--color-contrast-higher) h s l / .85);
   
   .main:has(input#theme-picker-gold:checked) & {
+    text-shadow: 0 1px 0 hsl(from white h s l / .2);
+  }
+
+  .main:has(input#theme-picker-light:checked) & {
     text-shadow: 0 1px 0 hsl(from white h s l / .2);
   }
 }
@@ -214,6 +234,30 @@ ul, ol {
   }
 }
 
+.main:has(input#theme-picker-light:checked) {
+  .btn-primary {
+    color: hsl(from var(--color-contrast-higher) h s l / .83);
+    text-shadow: 0 1px 0 hsl(from white h s l / .2);
+    background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.2), hsl(from white h s l / 0)), hsl(from var(--color-bg-light) h s l / .95);
+    box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0 1px 1px -.5px hsla(0 0% 0% / 0.1), 0 4.5px 4.5px -2.25px hsla(0 0% 0% / 0.15), 0 18px 18px -9px hsla(0 0% 0% / 0.25);
+
+    &::after {
+      background: linear-gradient(180deg, hsl(from white h s l / .75), hsl(from black h s l / .25) 41%, hsl(from black h s l / .25) 75%, hsl(from white h s l / .35)) border-box;
+      mix-blend-mode: overlay;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.3), hsl(from white h s l / 0)), var(--color-bg-light);
+      }
+    }
+  
+    &:active {
+      box-shadow: inset 0 0 0 1px hsl(from white h s l / .04), 0 0 0 1px hsl(from black h s l / .15), 0 1px 1px -.5px hsla(0 0% 0% / 0.1), 0 2.5px 4.5px -2.25px hsla(0 0% 0% / 0.15), 0 8px 18px -9px hsla(0 0% 0% / 0.25);
+    }
+  }
+}
+
 .btn-secondary {
   background: transparent;
 
@@ -242,6 +286,15 @@ ul, ol {
       background: hsl(from black h s l / .58);
     }
   }
+
+  .main:has(input#theme-picker-light:checked) & {
+    color: hsl(from var(--color-contrast-higher) h s l / .83);
+    text-shadow: 0 1px 0 hsl(from white h s l / .2);
+
+    &::after {
+      background: hsl(from black h s l / .1);
+    }
+  }
 }
 
 
@@ -259,6 +312,11 @@ ul, ol {
 .main:has(input#theme-picker-dark:checked) .btn-icon svg {
   -webkit-filter: drop-shadow(0 -1px 0 hsl(0 0% 0% / .5));
   filter: drop-shadow(0 -1px 0 hsl(0 0% 0% / .5));
+}
+
+.main:has(input#theme-picker-light:checked) .btn-icon svg {
+  -webkit-filter: drop-shadow(0 1px 0 hsl(0 0% 100% / .4));
+  filter: drop-shadow(0 1px 0 hsl(0 0% 100% / .4));
 }
 
 .main:has(input#theme-picker-gold:checked) {
@@ -282,6 +340,20 @@ ul, ol {
   
   .text-subtle {
     color: hsl(from var(--color-contrast-higher) h s l / .35);
+  }
+}
+
+.main:has(input#theme-picker-light:checked) {
+  .text, .text-subtle {
+    text-shadow: 0 1px 0 hsl(from white h s l / .2);
+  }
+
+  .text {
+    color: hsl(from var(--color-contrast-higher) h s l / .85);
+  }
+  
+  .text-subtle {
+    color: hsl(from var(--color-contrast-higher) h s l / .5);
   }
 }
 
@@ -338,6 +410,11 @@ ul, ol {
   box-shadow: 0 1px 0 hsl(from white h s l / .15), inset 0 1px 0 hsl(from black h s l / 1), inset 0 1px 4px hsl(from black h s l / .25);
 }
 
+.main:has(input#theme-picker-light:checked) .theme-picker-img-wrapper::after {
+  background: hsl(from black h s l / .1);
+  box-shadow: 0 1px 0 hsl(from white h s l / .2), inset 0 1px 0 hsl(from black h s l / 0.15), inset 0 1px 4px hsl(from black h s l / .1);
+}
+
 .theme-picker-img {
   width: 124px;
   -webkit-user-drag: none;
@@ -385,6 +462,16 @@ ul, ol {
       background: hsl(from white h s l / .15);
     }
   }
+
+  .main:has(input#theme-picker-light:checked) & {
+    &::before {
+      background: hsl(from black h s l / .175);
+    }
+
+    &::after {
+      background: hsl(from white h s l / .2);
+    }
+  }
 }
 
 .light {
@@ -415,6 +502,10 @@ ul, ol {
 
   .main:has(input#theme-picker-dark:checked) & {
     opacity: .1;
+  }
+
+  .main:has(input#theme-picker-light:checked) & {
+    opacity: .15;
   }
 }
 
@@ -455,6 +546,13 @@ ul, ol {
       box-shadow: 0 1px 0 hsl(from white h s l / .1), inset 0 1px 0 hsl(from black h s l / .95), inset 0 1px 4px hsl(from black h s l / .4);
     }
   }
+
+  .main:has(input#theme-picker-light:checked) & {
+    &::before {
+      background: hsl(from black h s l / .1);
+      box-shadow: 0 1px 0 hsl(from white h s l / .2), inset 0 1px 0 hsl(from black h s l / .1), inset 0 1px 4px hsl(from black h s l / .25);
+    }
+  }
 }
 
 /* switch active background color */
@@ -468,6 +566,12 @@ ul, ol {
   .switch:has(.switch-input:checked) {
     background: hsl(from white h s l / .83);
     box-shadow: 0px 5.8px 5.5px -5px hsla(0 0% 100% / 0.0825), 0px 16px 15px -5px hsl(0 0% 100% / 0.12)
+  }
+}
+
+.main:has(input#theme-picker-light:checked) {
+  .switch:has(.switch-input:checked) {
+    background: hsl(from var(--color-contrast-highest) h s l / .85); 
   }
 }
 
@@ -498,6 +602,10 @@ ul, ol {
 
   &:active {
     translate: 0;
+  }
+
+  .main:has(input#theme-picker-dark:checked) & {
+    background: radial-gradient(ellipse at -20px top, hsl(from white h s l / 0.15), hsl(from white h s l / 0)), hsl(from var(--color-bg-light) h s l / .8);
   }
 }
 
