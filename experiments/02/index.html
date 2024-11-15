@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Experiment 02</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900" rel="stylesheet">
+  <link href="assets/css/experiment-02.css?v=1" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class="menu-wrapper">
+      <menu class="menu">
+        <li>
+          <button class="menu-btn">
+            <canvas class="menu-icon js-riv-canvas" role="img" width="24" height="24"></canvas>
+            <span>Rotate Layer</span>
+            <span class="menu-hotkey"><em style="--sr: only;">Hotkey: </em>R</span>
+          </button>
+        </li>
+    
+        <li>
+          <button class="menu-btn">
+            <canvas class="menu-icon js-riv-canvas" role="img" width="24" height="24"></canvas>
+            <span>Bring to Front</span>
+            <span class="menu-hotkey"><em style="--sr: only;">Hotkey: </em>]</span>
+          </button>
+        </li>
+    
+        <li>
+          <button class="menu-btn">
+            <canvas class="menu-icon js-riv-canvas" role="img" width="24" height="24"></canvas>
+            <span>Replace Layer</span>
+            <span class="menu-hotkey"><em style="--sr: only;">Hotkey: </em>⇧R</span>
+          </button>
+        </li>
+    
+        <li>
+          <button class="menu-btn">
+            <canvas class="menu-icon js-riv-canvas" role="img" width="24" height="24"></canvas>
+            <span>Open Prototype</span>
+            <span class="menu-hotkey"><em style="--sr: only;">Hotkey: </em>⇧P</span>
+          </button>
+        </li>
+    
+        <li>
+          <button class="menu-btn">
+            <canvas class="menu-icon js-riv-canvas" role="img" width="24" height="24"></canvas>
+            <span>View Hotkeys</span>
+            <span class="menu-hotkey"><em style="--sr: only;">Hotkey: </em>⇧H</span>
+          </button>
+        </li>
+    
+        <li class="menu-marker" aria-hidden="true"></li>
+      </menu>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+  <script src="assets/js/experiment-02.js"></script>
+</body>
+</html>

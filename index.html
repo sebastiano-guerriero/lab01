@@ -10,7 +10,7 @@
 <body>
   <main style="--pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
     <!-- logo on desktop -->
-    <div style="--d: none; --col-start: 2; --row: 2/-1; --pt: 34px; --just-cont: center; --align-items: start; --d--at-md: flex;">
+    <div style="--d: none; --col-start: 2; --row: 2/-1; --pt: 34px; --just-cont: center; --align-items: start; --pos: relative; --z: 20; --d--at-md: flex;">
       <a href="#0" class="logo" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 34px;">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
           <title>Back to top</title>
@@ -42,14 +42,14 @@
     </header>
 
     <!-- cta on desktop -->
-    <div style="--d: none; --col-start: 4; --row-start: 2; --row: 1/-1; --just-cont: center; --align-items: start; --pt: 33px; --d--at-md: flex;">
+    <div style="--d: none; --col-start: 4; --row-start: 2; --row: 1/-1; --just-cont: center; --align-items: start; --pt: 33px; --pos: relative; --z: 20; --d--at-md: flex;">
       <a class="btn" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 33px; --z--at-md: 3;" href="mailto:se.guerriero@gmail.com">Get in touch</a>
     </div>
 
     <!-- experiments -->
     <ul style="--col: 1/-1; --d: grid; --grid-tem-cols: subgrid; --row-start: 3;">
       <!-- experiment 1 -->
-      <li id="ui-experiment-1" style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid; --bd-bottom: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08);">
+      <li id="ui-experiment-1" style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid; --bd-b: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08);">
         <div style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid;">
           <aside class="experiment-aside" style="--col-start--at-md: 2;" aria-hidden="true"></aside>
 
@@ -107,6 +107,67 @@
           </div>
         </div>
       </li>
+
+      <!-- experiment 2 -->
+      <li id="ui-experiment-2" style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid; --bd-b: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08);">
+        <div style="--col: 1/-1; --align-self: start; --d: grid; --grid-tem-cols: subgrid;">
+          <aside class="experiment-aside" style="--col-start--at-md: 2;" aria-hidden="true"></aside>
+
+          <!-- experiment -->
+          <figure class="experiment-wrapper" style="--col-start: 2;  --col-start--at-md: 3; --ar: 1/1;">
+            <iframe src="experiments/02/index.html" title="UI Experiment #02" loading="lazy"></iframe>
+          </figure>
+
+          <aside class="experiment-aside" style="--col-start--at-md: 4;" aria-hidden="true"></aside>
+        </div>
+
+        <!-- experiment meta -->
+        <div style="--col: 1/-1; --d: grid; --grid-tem-cols: subgrid; --bd-t: 1px; --bd-style: dashed; --bd-color: oklch(100% 0 0 / .08);">
+          <div style="--pos: relative; --col-start: 2; --p: 1.5rem; --col-start--at-md: 3;">
+            <h2 style="--mb: 1rem;">UI Experiment #02</h2>
+  
+            <ul class="meta-list" style="--lis: none;">
+              <li>
+                <dl>
+                  <dt>Icons</dt>
+                  <dd><a class="link" style="--ol--focus: ring;" href="https://nucleoapp.com/">Nucleo</a></dd>
+                </dl>
+              </li>
+
+              <li>
+                <dl>
+                  <dt>Fonts</dt>
+                  <dd>Inter</dd>
+                </dl>
+              </li>
+
+              <!-- colors -->
+              <li>
+                <dl>
+                  <dt>Colors</dt>
+                  <dd style="--d: flex;">
+                    <button class="btn-color" style="--bg: #1A1917" data-js-copy-color-to-clip><span style="--sr: only;">Copy color to clipboard</span></button>
+                    <button class="btn-color" style="--bg: #5E5E55" data-js-copy-color-to-clip><span style="--sr: only;">Copy color to clipboard</span></button>
+                    <button class="btn-color" style="--bg: #DFDFDC" data-js-copy-color-to-clip><span style="--sr: only;">Copy color to clipboard</span></button>
+                    <button class="btn-color" style="--bg: #7A8FF7" data-js-copy-color-to-clip><span style="--sr: only;">Copy color to clipboard</span></button>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+
+            <!-- link -->
+            <a href="#ui-experiment-2" class="experiment-link" style="--ol--focus: ring; --pos: absolute; --t: 1.5rem; --r: 1.5rem;">
+              <svg style="--size: 18px;" viewBox="0 0 18 18">
+                <title>link</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                  <path d="M8.5,6.827c-.352,.168-.682,.398-.973,.69l-.01,.01c-1.381,1.381-1.381,3.619,0,5l2.175,2.175c1.381,1.381,3.619,1.381,5,0l.01-.01c1.381-1.381,1.381-3.619,0-5l-.931-.931"></path>
+                  <path d="M9.5,11.173c.352-.168,.682-.398,.973-.69l.01-.01c1.381-1.381,1.381-3.619,0-5l-2.175-2.175c-1.381-1.381-3.619-1.381-5,0l-.01,.01c-1.381,1.381-1.381,3.619,0,5l.931,.931"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
     </ul>
 
     <!-- background grid -->
@@ -118,7 +179,7 @@
   </main>
 
   <!-- background noise -->
-  <figure class="bg-noise" style="--pos: absolute; --z: 1;" aria-hidden="true">
+  <figure class="bg-noise" style="--pos: fixed; --z: 1;" aria-hidden="true">
     <svg>
       <filter id="noise-bg-fx">
         <feTurbulence baseFrequency="0.8" />
