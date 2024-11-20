@@ -246,6 +246,7 @@ iframe {
 [style*="--align-items:"] { align-items: var(--align-items); }
 [style*="--align-cont:"] { align-content: var(--align-cont); }
 [style*="--place-items:"] { place-items: var(--place-items); }
+[style*="--place-cont:"] { place-content: var(--place-cont); }
 [style*="--fx-wrap:"] { flex-wrap: var(--fx-wrap); }
 [style*="--fx-direction:"] { flex-direction: var(--fx-direction); }
 [style*="--fx:"] { flex: var(--fx); }
@@ -349,6 +350,7 @@ iframe {
   [style*="--align-items--at-sm:"] { align-items: var(--align-items--at-sm); }
   [style*="--align-cont--at-sm:"] { align-content: var(--align-cont--at-sm); }
   [style*="--place-items--at-sm:"] { place-items: var(--place-items--at-sm); }
+  [style*="--place-cont--at-sm:"] { place-content: var(--place-cont--at-sm); }
   [style*="--fx-wrap--at-sm:"] { flex-wrap: var(--fx-wrap--at-sm); }
   [style*="--fx-direction--at-sm:"] { flex-direction: var(--fx-direction--at-sm); }
   [style*="--fx--at-sm:"] { flex: var(--fx--at-sm); }
@@ -435,6 +437,7 @@ iframe {
   [style*="--align-items--at-md:"] { align-items: var(--align-items--at-md); }
   [style*="--align-cont--at-md:"] { align-content: var(--align-cont--at-md); }
   [style*="--place-items--at-md:"] { place-items: var(--place-items--at-md); }
+  [style*="--place-cont--at-md:"] { place-content: var(--place-cont--at-md); }
   [style*="--fx-wrap--at-md:"] { flex-wrap: var(--fx-wrap--at-md); }
   [style*="--fx-direction--at-md:"] { flex-direction: var(--fx-direction--at-md); }
   [style*="--fx--at-md:"] { flex: var(--fx--at-md); }
