@@ -7,11 +7,11 @@
   <title>Lab01 - Welcome to the digital lab of Sebastiano Guerriero</title>
   <link href="assets/css/style.css?v=1" rel="stylesheet">
 </head>
-<body>
+<body style="--available-for-work: off;">
   <main style="--pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
     <!-- logo on desktop -->
     <div style="--d: none; --col-start: 2; --row: 2/-1; --pt: 34px; --just-cont: center; --align-items: start; --pos: relative; --z: 20; --d--at-md: flex;">
-      <a href="#0" class="logo" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 34px;">
+      <a href="#0" class="logo" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 34px; --mb--at-md: 40px;">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
           <title>Back to top</title>
           <path d="M25 8.5L31 5.5V26H25V8.5Z" fill="white" fill-opacity="0.8"/>
@@ -37,13 +37,13 @@
   
         <h1 style="--t-wrap: balance; --t-align: center; --bg--selection: oklch(100% 0 0 / .8); --color--selection: #0A0A0A; --lh: 1.4;">Welcome to the digital lab of Sebastiano Guerriero <span style="--op: .4; --d--at-sm: block; --bg--selection: oklch(100% 0 0 / .8); --color--selection: #0A0A0A;">— a product designer specialized in web apps.</span></h1>
   
-        <a class="btn" style="--ol--focus: ring; --d--at-md: none;" href="mailto:se.guerriero@gmail.com">Get in touch</a>
+        <a class="btn" style="--ol--focus: ring; --d--at-md: none;" href="#hire-me">Hire Me<span class="btn-availability-indicator" aria-hidden="true"></span></a>
       </div>
     </header>
 
     <!-- cta on desktop -->
     <div style="--d: none; --col-start: 4; --row-start: 2; --row: 1/-1; --just-cont: center; --align-items: start; --pt: 33px; --pos: relative; --z: 20; --d--at-md: flex;">
-      <a class="btn" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 33px; --z--at-md: 3;" href="mailto:se.guerriero@gmail.com">Get in touch</a>
+      <a class="btn" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 33px; --mb--at-md: 40px; --z--at-md: 3;" href="#hire-me">Hire Me <span class="btn-availability-indicator" aria-hidden="true"></span></a>
     </div>
 
     <!-- experiments -->
@@ -661,6 +661,17 @@
       <div style="--d: none; --col-start: 4; --row: 1/-1; --bd-x: 1px; --bd-color: oklch(100% 0 0 / .08); --d--at-md: block;"></div>
     </div>
   </main>
+
+  <footer id="hire-me" style="--bg: #fafafa; --pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
+    <h2>Hire me</h2>
+
+    <!-- background grid -->
+    <div style="--col: 1/-1; --row: 1/-1; --d: grid; --grid-tem-cols: subgrid; --pointer-ev: none; --pos: relative; --z: 10;" aria-hidden="true">
+      <div style="--col-start: 2; --row: 1/-1; --bd-x: 1px; --bd-color: hsl(0 0% 4% / .05)"></div>
+      <div style="--d: none; --col-start: 3; --row: 1/-1; --bd-x: 1px; --bd-color: hsl(0 0% 4% / .05); --d--at-md: block;"></div>
+      <div style="--d: none; --col-start: 4; --row: 1/-1; --bd-x: 1px; --bd-color: hsl(0 0% 4% / .05); --d--at-md: block;"></div>
+    </div>
+  </footer>
 
   <!-- background noise -->
   <figure class="bg-noise" style="--pos: fixed; --z: 1;" aria-hidden="true">
