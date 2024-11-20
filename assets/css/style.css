@@ -151,6 +151,45 @@ body[style*="--available-for-work: on;"] .btn-availability-indicator::after {
           clip-path: inset(2px);
 }
 
+.hire-me-aside {
+  background: url('../img/bg-stripes-dark.svg');
+  -webkit-clip-path: inset(2px);
+          clip-path: inset(2px);
+}
+
+.hire-me-title {
+  display: flex;
+  justify-content: space-between;
+
+  &::after {
+    content: '[fully booked]';
+    font-weight: 400;
+    text-align: right;
+    color: #f97316;
+  }
+}
+
+body[style*="--available-for-work: on"] .hire-me-title::after {
+  content: '[available]';
+  color: #10b981;
+}
+
+.show-if-available {
+  display: none;
+}
+
+.show-if-not-available {
+  display: contents;
+}
+
+body[style*="--available-for-work: on"] .show-if-available {
+  display: contents;
+}
+
+body[style*="--available-for-work: on"] .show-if-not-available {
+  display: none;
+}
+
 .meta-list {
   display: flex;
   flex-direction: column;

@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <title>Lab01 - Welcome to the digital lab of Sebastiano Guerriero</title>
+  <title>Lab01 - Sebastiano Guerriero's portfolio</title>
+  <!-- Twitter Card start  -->
+  <meta property="twitter:title" content="Lab01 - Sebastiano Guerriero's portfolio" />
+  <meta property="twitter:description" content="Explore the digital lab of Sebastiano Guerriero" />
+  <meta property="twitter:image" content="assets/img/twitter-card.png" />
+  <meta content="summary_large_image" name="twitter:card">
+  <!-- Twitter Card end  -->
   <link href="assets/css/style.css?v=1" rel="stylesheet">
 </head>
-<body style="--available-for-work: off;">
-  <main style="--pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
+<body style="--available-for-work: on;">
+  <main id="top" style="--pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
     <!-- logo on desktop -->
     <div style="--d: none; --col-start: 2; --row: 2/-1; --pt: 34px; --just-cont: center; --align-items: start; --pos: relative; --z: 20; --d--at-md: flex;">
-      <a href="#0" class="logo" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 34px; --mb--at-md: 40px;">
+      <a href="#top" class="logo" style="--ol--focus: ring; --pos--at-md: sticky; --t--at-md: 34px; --mb--at-md: 40px;">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
           <title>Back to top</title>
           <path d="M25 8.5L31 5.5V26H25V8.5Z" fill="white" fill-opacity="0.8"/>
@@ -662,8 +668,38 @@
     </div>
   </main>
 
-  <footer id="hire-me" style="--bg: #fafafa; --pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --grid-tem-rows: 24px auto 1fr; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
-    <h2>Hire me</h2>
+  <footer id="hire-me" style="--bg: #fafafa; --pos: relative; --z: 2; --d: grid; --grid-tem-cols: 24px 1fr 24px; --min-h: 100dvh; --grid-tem-cols--at-sm: 1fr 33.75rem 1fr; --grid-tem-cols--at-md: 1fr 258px 540px 258px 1fr; --col-gap--at-md: 1.5rem;">
+    <div style="--col: 1/-1; --row: 1/-1; --d: grid; --grid-tem-cols: subgrid;">
+      <!-- content -->
+      <div style="--col: 1/-1; --d: grid; --grid-tem-cols: subgrid; --my: auto; --bd-y: 1px; --bd-style: dashed; --bd-color: hsl(0 0% 4% / .05);">
+        <aside class="hire-me-aside" style="--col-start--at-md: 2;" aria-hidden="true"></aside>
+
+        <div style="--col-start: 2; --color: #0A0A0A; --d: flex; --fx-direction: column; --gap: 1rem; --p: 1.5rem; --col-start--at-md: 3;">
+          <h2 class="hire-me-title" style="--lh: 1;">Let's work together</h2>
+          <p style="--op: 0.5; --f-weight: 400;">Better design means a better user experience, happier clients who share your product, and more sales.</p>
+          <p style="--op: 0.5; --f-weight: 400;">I can help you achieve that.</p>
+          <h3 style="--lh: 1; --mt: 1rem;">The plan</h3>
+          <ul style="--color: hsl(0 0% 4% / .5); --f-weight: 400; --d: flex; --fx-direction: column; --gap: 0.375rem; --lis: inside;">
+            <li>2h/day (Mon-Fri GMT+1)</li>
+            <li>$125/h</li>
+            <li>Design + code of web apps</li>
+          </ul>
+
+          <div class="show-if-not-available">
+            <h3 style="--lh: 1; --mt: 1rem;">Future collaborations</h3>
+            <p><span style="--op: 0.5; --f-weight: 400;">Email me at</span> <a href="mailto:se.guerriero@gmail.com?subject=Notify%20me%20when%20you're%20booking%20new%20projects" class="link">se.guerriero@gmail.com</a> <span style="--op: 0.5; --f-weight: 400;">and I'll notify you when I'm booking new projects.</span></p>
+          </div>
+
+          <div class="show-if-available">
+            <h3 style="--lh: 1; --mt: 1rem;">Start here:</h3>
+            <p><span style="--op: 0.5; --f-weight: 400;">Email me at</span> <a href="mailto:se.guerriero@gmail.com?subject=Let's%20work%20together" class="link">se.guerriero@gmail.com</a></p>
+            <p><span style="--op: 0.5; --f-weight: 400;">Or</span> <a href="" class="link">book a 15m intro call</a>.</p>
+          </div>
+        </div>
+
+        <aside class="hire-me-aside" style="--col-start--at-md: 4;" aria-hidden="true"></aside>
+      </div>
+    </div>
 
     <!-- background grid -->
     <div style="--col: 1/-1; --row: 1/-1; --d: grid; --grid-tem-cols: subgrid; --pointer-ev: none; --pos: relative; --z: 10;" aria-hidden="true">
@@ -682,7 +718,7 @@
     </svg>
   </figure>
 
-  <!-- bg light -->
+  <!-- light -->
   <div style="--pos: absolute; --inset: 0; --z: 1; --ov: hidden; --pointer-ev: none;" aria-hidden="true">
     <div style="--max-w--at-md: 1104px; --mx--at-md: auto;">
       <div style="--translate: 0 -90px;">
