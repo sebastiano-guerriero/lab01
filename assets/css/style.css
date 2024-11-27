@@ -49,11 +49,14 @@ a {
 .logo {
   z-index: 3;
   border-radius: 6px;
+  transition: -webkit-filter .3s;
   transition: filter .3s;
+  transition: filter .3s, -webkit-filter .3s;
 
   @media (hover: hover) {
     &:hover {
-      filter: drop-shadow(0 0 20px hsl(0 0% 100% / .25));
+      -webkit-filter: drop-shadow(0 0 20px hsl(0 0% 100% / .25));
+              filter: drop-shadow(0 0 20px hsl(0 0% 100% / .25));
     }
   }
 }
@@ -126,7 +129,20 @@ body[style*="--available-for-work: on;"] .btn-availability-indicator::after {
   inset: 0;
   border-radius: inherit;
   background: inherit;
-  animation: pulse 2s infinite;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    scale: 0;
+    opacity: 1;
+  }
+
+  to {
+    scale: 3;
+    opacity: 0;
+  }
 }
 
 @keyframes pulse {
