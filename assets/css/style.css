@@ -186,11 +186,14 @@ body[style*="--available-for-work: on;"] .btn-availability-indicator::after {
     font-weight: 400;
     text-align: right;
     color: #f97316;
+    font-size: 0.75rem;
+    text-transform: none;
   }
 }
 
 body[style*="--available-for-work: on"] .hire-me-title::after {
   content: '[available]';
+  text-transform: uppercase;
   color: #10b981;
 }
 
