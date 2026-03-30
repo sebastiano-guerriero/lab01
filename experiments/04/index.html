@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Component Tutorial Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@500" rel="stylesheet">
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div data-name="frame" class="size-135 bg-background isolate overflow-hidden">
+      <main class="flex">
+        <aside class="w-[248px] shrink-0 p-4">
+          <header class="flex items-center justify-between mb-4 pl-2">
+            <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_573_295)">
+              <path d="M2.04545 22H6.81818V10.6667L0 5.66666V20C0 21.1067 0.917045 22 2.04545 22Z" fill="#868FA0" style="fill:#868FA0;fill:color(display-p3 0.5255 0.5608 0.6275);fill-opacity:1;"/>
+              <path d="M23.1818 22H27.9545C29.0863 22 29.9999 21.1033 29.9999 20V5.66666L23.1818 10.6667" fill="#868FA0" style="fill:#868FA0;fill:color(display-p3 0.5255 0.5608 0.6275);fill-opacity:1;"/>
+              <path d="M23.1818 2V10.6667L29.9999 5.66666V3C29.9999 0.526664 27.1124 -0.883336 25.0909 0.599997" fill="#202124" style="fill:#202124;fill:color(display-p3 0.1255 0.1294 0.1412);fill-opacity:1;"/>
+              <path d="M6.81824 10.6667V2L15.0001 8L23.1819 2V10.6667L15.0001 16.6667" fill="#868FA0" style="fill:#868FA0;fill:color(display-p3 0.5255 0.5608 0.6275);fill-opacity:1;"/>
+              <path d="M0 3V5.66666L6.81818 10.6667V2L4.90909 0.599997C2.88409 -0.883336 0 0.526664 0 3Z" fill="#202124" style="fill:#202124;fill:color(display-p3 0.1255 0.1294 0.1412);fill-opacity:1;"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_573_295">
+              <rect width="30" height="22" fill="white" style="fill:white;fill-opacity:1;"/>
+              </clipPath>
+              </defs>
+            </svg>
+  
+            <button class="group flex relative size-9.5 rounded-full bg-white shadow-sm inset-shadow-[0_-2px_hsl(from_var(--color-black)_h_s_l/0.05)] hover:inset-shadow-[0_-1px_hsl(from_var(--color-black)_h_s_l/0.05)] hover:shadow-xs transition-shadow">
+              <svg class="shrink-0 size-4.5 text-contrast-high m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>feather</title><g fill="currentColor"><path d="m15.25,2.75c-7.3882.6465-10.4683,5.8887-11.7091,9.376.3863.2039.6651.3301.6651.3301.81.3628,1.612.5229,1.659.531.854.156,1.643.2339,2.367.2339,1.507,0,2.73-.3379,3.65-1.01.2893-.2115.816-.6502,1.2003-1.3639-2.1389-.3215-3.5042-1.2846-3.5042-1.2846,0,0,3.2964.2493,4.3419-.5767.4812-.3801.899-.9978,1.116-1.8308.1582-.6074.228-1.2041.313-1.7761.135-.9009.262-1.751.551-2.2559.0798-.1389.0978-.2944.0817-.4482-.4393.0435-.7318.0752-.7318.0752Z" stroke-width="0"></path><path d="m2.751,16c-.0283,0-.0566-.0015-.0859-.0049-.4111-.0469-.707-.4185-.6602-.8301.0137-.1211,1.5156-12.1416,13.1797-13.1621.4072-.0381.7764.269.8125.6816s-.2695.7764-.6816.8125C4.8584,4.4121,3.5078,15.2256,3.4951,15.335c-.0439.3828-.3682.665-.7441.665Z" stroke-width="0"></path></g></svg>
+              <span class="block absolute inset-0 -z-1 rounded-[inherit] ring-3 ring-[#E8EDF7]"></span>
+              <span class="block absolute -inset-px rounded-[inherit] bg-linear-to-b from-contrast-high/5 to-contrast-high/15 mask-clip-padding-only p-px active:from-contrast-high/15 active:to-contrast-high/5"></span>
+            </button>
+          </header>
+  
+          <nav>
+            <ul class="grid gap-y-0.5">
+              <li>
+                <a aria-current="page" href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full bg-[#E8EDF7] hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>inbox</title><g fill="currentColor"><path d="M16.213,9h-4.463c-.414,0-.75,.336-.75,.75v1c0,.138-.112,.25-.25,.25h-3.5c-.138,0-.25-.112-.25-.25v-1c0-.414-.336-.75-.75-.75H1.787c-.36,0-.668,.255-.736,.608-.033,.171-.05,.345-.05,.521v3.121c0,1.517,1.233,2.75,2.75,2.75H14.25c1.517,0,2.75-1.233,2.75-2.75v-3.121c0-.176-.017-.35-.05-.521-.068-.353-.376-.608-.736-.608Z"></path><path d="M16.212,10.5c-.352,0-.665-.249-.735-.606-.015-.076-.036-.15-.063-.222l-2.113-5.379c-.189-.482-.646-.793-1.164-.793H5.863c-.518,0-.975,.311-1.164,.793l-2.113,5.379c-.028,.072-.049,.146-.064,.222-.08,.407-.475,.672-.88,.593-.407-.08-.672-.474-.593-.88,.032-.165,.079-.327,.141-.483L3.303,3.744c.417-1.06,1.421-1.744,2.56-1.744h6.273c1.139,0,2.144,.685,2.56,1.744l2.113,5.379c.062,.157,.108,.319,.14,.483,.079,.406-.186,.8-.593,.88-.048,.009-.097,.014-.145,.014Z"></path></g></svg>
+                  Inbox
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>clock-snooze</title><g fill="currentColor"><path d="M13.75,7c-.881,0-1.686-.518-2.049-1.32-.364-.803-.224-1.75,.357-2.412l.522-.597c-.45-.275-.785-.71-.954-1.219-.824-.288-1.705-.452-2.625-.452C4.589,1,1,4.589,1,9s3.589,8,8,8,8-3.589,8-8c0-.692-.097-1.359-.263-2h-2.987Zm-.883,4.677c-.146,.21-.379,.323-.617,.323-.147,0-.296-.043-.426-.133l-3.25-2.25c-.203-.14-.323-.371-.323-.617V4.75c0-.414,.336-.75,.75-.75s.75,.336,.75,.75v3.857l2.927,2.026c.341,.236,.426,.703,.19,1.043Z"></path><path d="M17.25,5.5h-3.5c-.294,0-.562-.172-.683-.44s-.075-.583,.119-.804l2.412-2.756h-1.847c-.414,0-.75-.336-.75-.75s.336-.75,.75-.75h3.5c.294,0,.562,.172,.683,.44s.075,.583-.119,.804l-2.412,2.756h1.847c.414,0,.75,.336,.75,.75s-.336,.75-.75,.75Z"></path></g></svg>
+                  Snoozed
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>paper-plane-4</title><g fill="currentColor"><path d="M15.817,7.876L4.351,1.922c-.453-.234-.997-.175-1.39,.148-.392,.324-.552,.849-.408,1.336l1.435,4.844h4.898c.414,0,.75,.336,.75,.75s-.336,.75-.75,.75H3.988l-1.435,4.844c-.145,.488,.016,1.012,.408,1.336,.232,.191,.518,.29,.806,.29,.199,0,.399-.047,.584-.143l11.466-5.954c.421-.219,.683-.649,.683-1.124s-.262-.905-.683-1.124Z"></path></g></svg>
+                  Sent
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>file-feather</title><g fill="currentColor"><path d="M17.9165 10.4048C17.7769 10.1353 17.4995 9.97659 17.1851 10.0029C10.8306 10.5591 10.0132 17.0991 10.0054 17.165C9.95848 17.5766 10.2544 17.9482 10.6656 17.9951C10.6949 17.9985 10.7232 18 10.7515 18C11.1275 18 11.4517 17.7178 11.4956 17.335C11.5 17.2963 11.5242 17.1037 11.5882 16.8113C11.6755 16.3891 12.0317 15.0156 12.8286 14.1094C12.8286 14.1094 12.5005 15.3906 12.7039 16.5H13.5005C16.5503 16.5 16.9194 14.5146 17.189 13.0649C17.3218 12.352 17.4468 11.6792 17.8228 11.2343C18.0191 11.0024 18.0561 10.6748 17.9165 10.4048Z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 8.657C10.774 9.665 8.817 14.451 8.515 16.995V17H4.75C3.233 17 2 15.767 2 14.25V3.75C2 2.233 3.233 1 4.75 1H10.336C10.803 1 11.242 1.182 11.573 1.513L15.487 5.427C15.818 5.757 16 6.197 16 6.664V8.657ZM7.75 5.999H5.75C5.336 5.999 5 6.335 5 6.749C5 7.163 5.336 7.499 5.75 7.499H7.75C8.164 7.499 8.5 7.163 8.5 6.749C8.5 6.335 8.164 5.999 7.75 5.999ZM5.75 8.999C5.336 8.999 5 9.335 5 9.749C5 10.163 5.336 10.499 5.75 10.499H10.25C10.664 10.499 11 10.163 11 9.749C11 9.335 10.664 8.999 10.25 8.999H5.75ZM11.501 6.499C10.951 6.499 10.501 6.049 10.501 5.499L10.5 2.578L14.433 6.499H11.501Z"></path></g></svg>
+                  Draft
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>envelope-alert</title><g fill="currentColor"><path d="M14.25 2.5H3.75C2.233 2.5 1 3.733 1 5.25V12.75C1 14.267 2.233 15.5 3.75 15.5H6.47656C6.89056 15.5 7.22656 15.164 7.22656 14.75C7.22656 14.336 6.89056 14 6.47656 14H3.75C3.061 14 2.5 13.439 2.5 12.75V6.521L8.154 9.641C8.419 9.787 8.71 9.86 9 9.86C9.29 9.86 9.581 9.787 9.846 9.641L15.5 6.521V8.6785C15.5 9.0925 15.836 9.4285 16.25 9.4285C16.664 9.4285 17 9.0925 17 8.6785V5.25C17 3.733 15.767 2.5 14.25 2.5Z"></path> <path d="M17.4095 14.8135L14.4764 10.1826C14.1536 9.67333 13.6009 9.36863 12.9979 9.36863C12.3949 9.36863 11.8421 9.67333 11.5194 10.1826L8.58633 14.8135C8.24503 15.3526 8.22403 16.0347 8.53163 16.5938C8.83923 17.1529 9.42663 17.5 10.0648 17.5H12.9979H15.931C16.5692 17.5 17.1566 17.1528 17.4642 16.5938C17.7718 16.0348 17.7508 15.3526 17.4095 14.8135ZM12.9979 16.5C12.5837 16.5 12.2479 16.1641 12.2479 15.75C12.2479 15.3357 12.5837 15 12.9979 15C13.4121 15 13.7479 15.3357 13.7479 15.75C13.7479 16.1641 13.4121 16.5 12.9979 16.5ZM13.7479 13.5C13.7479 13.9141 13.412 14.25 12.9979 14.25C12.5838 14.25 12.2479 13.9141 12.2479 13.5V11.75C12.2479 11.3359 12.5838 11 12.9979 11C13.412 11 13.7479 11.3359 13.7479 11.75V13.5Z"></path></g></svg>
+                  Spam
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>flag-5</title><g fill="currentColor"><path d="M14.635,2.606c-.227-.136-.508-.142-.74-.017-1.281,.689-2.481,.958-3.565,.794-.495-.074-.86-.219-1.284-.387-.47-.187-1.002-.398-1.781-.546-1.059-.201-2.155-.194-3.265-.002V10.956c1.019-.213,2.029-.247,3.007-.091,.628,.1,1.043,.244,1.483,.396,.416,.144,.846,.292,1.422,.388,.362,.06,.73,.09,1.104,.09,1.092,0,2.237-.255,3.417-.762,.326-.082,.566-.377,.566-.728V3.25c0-.264-.139-.508-.365-.644Z"></path><path d="M3.75,17c-.414,0-.75-.336-.75-.75V1.75c0-.414,.336-.75,.75-.75s.75,.336,.75,.75v14.5c0,.414-.336,.75-.75,.75Z"></path></g></svg>
+                  Important
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>paper-plane-4-clock</title><g fill="currentColor"><path d="M14 10C11.794 10 10 11.794 10 14C10 16.206 11.794 18 14 18C16.206 18 18 16.206 18 14C18 11.794 16.206 10 14 10ZM16.312 14.95C16.193 15.24 15.914 15.415 15.619 15.415C15.523 15.415 15.428 15.397 15.334 15.359L13.715 14.694C13.434 14.578 13.25 14.304 13.25 14V12.25C13.25 11.836 13.586 11.5 14 11.5C14.414 11.5 14.75 11.836 14.75 12.25V13.497L15.904 13.971C16.287 14.128 16.47 14.567 16.312 14.95Z"></path> <path d="M3.35091 1.92254L15.2172 8.0844C15.463 8.21203 15.6192 8.46809 15.6216 8.74357C15.1089 8.58526 14.5643 8.5 14 8.5C11.1719 8.5 8.83801 10.6416 8.53362 13.3894L3.35091 16.0775C2.35851 16.5927 1.23707 15.6638 1.55269 14.5947L2.98848 9.75H8.38598C8.80019 9.75 9.13598 9.41421 9.13598 9C9.13598 8.58579 8.80019 8.25 8.38598 8.25H2.98848L1.55292 3.40612C1.23727 2.33685 2.35843 1.40693 3.35091 1.92254Z"></path></g></svg>
+                  Scheduled
+                </a>
+              </li>
+              <li>
+                <a href="#0" class="flex items-center gap-3 h-9 px-3.5 rounded-full hover:bg-[oklch(from_#E8EDF7_l_c_h/0.75)] text-contrast-low hover:text-contrast-high transition-transform active:scale-99">
+                  <svg class="shrink-0 size-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>trash-2</title><g fill="currentColor"><path d="M3.40771 5L3.90253 14.3892C3.97873 15.8531 5.18472 17 6.64862 17H11.3527C12.8166 17 14.0226 15.853 14.0988 14.3896L14.5936 5H3.40771ZM7.41711 14H7.37512C6.97912 14 6.64913 13.6899 6.62613 13.29L6.37613 8.79004C6.35313 8.37984 6.67014 8.02 7.08414 8C7.49804 7.98 7.85112 8.28996 7.87512 8.70996L8.12512 13.21C8.14812 13.6202 7.83111 13.98 7.41711 14ZM11.3751 13.29C11.3531 13.6899 11.0221 14 10.6261 14H10.5841C10.1701 13.98 9.85413 13.6201 9.87613 13.21L10.1261 8.70996C10.149 8.29976 10.4831 7.9903 10.9171 8C11.3311 8.02 11.6471 8.37994 11.6251 8.79004L11.3751 13.29Z"></path> <path d="M15.25 4H12V2.75C12 1.7852 11.2148 1 10.25 1H7.75C6.7852 1 6 1.7852 6 2.75V4H2.75C2.3359 4 2 4.3359 2 4.75C2 5.1641 2.3359 5.5 2.75 5.5H15.25C15.6641 5.5 16 5.1641 16 4.75C16 4.3359 15.6641 4 15.25 4ZM7.5 2.75C7.5 2.6143 7.6143 2.5 7.75 2.5H10.25C10.3857 2.5 10.5 2.6143 10.5 2.75V4H7.5V2.75Z"></path></g></svg>
+                  Trash
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+  
+        <div>
+          <!-- search -->
+          <div class="my-4">
+            <div class="relative">
+              <input type="text" class="h-9.5 w-[400px] bg-[#E8EDF7] rounded-full px-4 pl-11.5 text-contrast-high focus:outline-none focus:inset-ring inset-ring-contrast-high/5">
+              <svg class="size-4.5 text-contrast-low pointer-events-none absolute left-4 top-1/2 -translate-y-1/2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>magnifier</title><g fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.1083 11.1083C11.4012 10.8154 11.876 10.8154 12.1689 11.1083L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L11.1083 12.1689C10.8154 11.876 10.8154 11.4012 11.1083 11.1083Z"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 7.75C1.5 4.29829 4.29829 1.5 7.75 1.5C11.2017 1.5 14 4.29829 14 7.75C14 11.2017 11.2017 14 7.75 14C4.29829 14 1.5 11.2017 1.5 7.75ZM7.75 3C5.12671 3 3 5.12671 3 7.75C3 10.3733 5.12671 12.5 7.75 12.5C10.3733 12.5 12.5 10.3733 12.5 7.75C12.5 5.12671 10.3733 3 7.75 3Z"></path></g></svg>
+            </div>
+          </div>
+
+          <!-- emails -->
+          <div class="bg-white w-[450px] h-[520px] rounded-[12px] p-4 shadow-sm ring ring-contrast-high/5 isolate">
+            <!-- menubar -->
+            <div class="flex items-center mb-4 mt-1.5 pl-3.5 h-4.5">
+              <input data-name="main-checkbox" id="select-all" aria-label="Select all" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-contrast-low checked:inset-shadow-2xs checked:inset-shadow-white/20 indeterminate:bg-contrast-low indeterminate:ring-contrast-low indeterminate:inset-shadow-2xs indeterminate:inset-shadow-white/20" type="checkbox">
+
+              <div data-name="email-actions" class="hidden items-center">
+                <span class="bg-[#EAECF0] h-4 w-px ml-4 mr-3.5"></span>
+
+                <ul class="flex gap-x-5 items-center">
+                  <li class="h-4.5 relative">
+                    <button class="peer text-contrast-low hover:text-contrast-high transition-colors">
+                      <svg class="size-4.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Archive</title><g fill="currentColor"><path d="M15.25,2H2.75c-.965,0-1.75,.785-1.75,1.75v1.5c0,.879,.654,1.602,1.5,1.725v6.275c0,1.517,1.233,2.75,2.75,2.75h7.5c1.517,0,2.75-1.233,2.75-2.75V6.975c.846-.123,1.5-.845,1.5-1.725v-1.5c0-.965-.785-1.75-1.75-1.75Zm-4.25,8H7c-.414,0-.75-.336-.75-.75s.336-.75,.75-.75h4c.414,0,.75,.336,.75,.75s-.336,.75-.75,.75Zm4.5-4.75c0,.138-.112,.25-.25,.25H2.75c-.138,0-.25-.112-.25-.25v-1.5c0-.138,.112-.25,.25-.25H15.25c.138,0,.25,.112,.25,.25v1.5Z"></path></g></svg>
+                    </button>
+
+                    <span class="bg-contrast-high/90 backdrop-blur-sm rounded-md px-2 py-1.5 leading-none absolute -top-1 -translate-y-full left-1/2 -translate-x-1/2 text-[11px] text-white shadow-md pointer-events-none origin-bottom scale-95 opacity-0 transition-[scale,opacity] peer-hover:opacity-100 peer-hover:scale-100 font-medium whitespace-nowrap">Archive</span>
+                  </li>
+
+                  <li class="h-4.5 relative">
+                    <button class="peer text-contrast-low hover:text-contrast-high transition-colors">
+                      <svg class="size-4.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Mark as important</title><g fill="currentColor"><path d="M14.635,2.606c-.227-.136-.508-.142-.74-.017-1.281,.689-2.481,.958-3.565,.794-.495-.074-.86-.219-1.284-.387-.47-.187-1.002-.398-1.781-.546-1.059-.201-2.155-.194-3.265-.002V10.956c1.019-.213,2.029-.247,3.007-.091,.628,.1,1.043,.244,1.483,.396,.416,.144,.846,.292,1.422,.388,.362,.06,.73,.09,1.104,.09,1.092,0,2.237-.255,3.417-.762,.326-.082,.566-.377,.566-.728V3.25c0-.264-.139-.508-.365-.644Z"></path><path d="M3.75,17c-.414,0-.75-.336-.75-.75V1.75c0-.414,.336-.75,.75-.75s.75,.336,.75,.75v14.5c0,.414-.336,.75-.75,.75Z"></path></g></svg>
+                    </button>
+
+                    <span class="bg-contrast-high/90 backdrop-blur-sm rounded-md px-2 py-1.5 leading-none absolute -top-1 -translate-y-full left-1/2 -translate-x-1/2 text-[11px] text-white shadow-md pointer-events-none origin-bottom scale-95 opacity-0 transition-[scale,opacity] peer-hover:opacity-100 peer-hover:scale-100 font-medium whitespace-nowrap">Mark as Important</span>
+                  </li>
+
+                  <li class="h-4.5 relative">
+                    <button class="peer text-contrast-low hover:text-contrast-high transition-colors">
+                      <svg class="size-4.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Trash</title><g fill="currentColor"><path d="M3.40771 5L3.90253 14.3892C3.97873 15.8531 5.18472 17 6.64862 17H11.3527C12.8166 17 14.0226 15.853 14.0988 14.3896L14.5936 5H3.40771ZM7.41711 14H7.37512C6.97912 14 6.64913 13.6899 6.62613 13.29L6.37613 8.79004C6.35313 8.37984 6.67014 8.02 7.08414 8C7.49804 7.98 7.85112 8.28996 7.87512 8.70996L8.12512 13.21C8.14812 13.6202 7.83111 13.98 7.41711 14ZM11.3751 13.29C11.3531 13.6899 11.0221 14 10.6261 14H10.5841C10.1701 13.98 9.85413 13.6201 9.87613 13.21L10.1261 8.70996C10.149 8.29976 10.4831 7.9903 10.9171 8C11.3311 8.02 11.6471 8.37994 11.6251 8.79004L11.3751 13.29Z"></path> <path d="M15.25 4H12V2.75C12 1.7852 11.2148 1 10.25 1H7.75C6.7852 1 6 1.7852 6 2.75V4H2.75C2.3359 4 2 4.3359 2 4.75C2 5.1641 2.3359 5.5 2.75 5.5H15.25C15.6641 5.5 16 5.1641 16 4.75C16 4.3359 15.6641 4 15.25 4ZM7.5 2.75C7.5 2.6143 7.6143 2.5 7.75 2.5H10.25C10.3857 2.5 10.5 2.6143 10.5 2.75V4H7.5V2.75Z"></path></g></svg>
+                    </button>
+
+                    <span class="bg-contrast-high/90 backdrop-blur-sm rounded-md px-2 py-1.5 leading-none absolute -top-1 -translate-y-full left-1/2 -translate-x-1/2 text-[11px] text-white shadow-md pointer-events-none origin-bottom scale-95 opacity-0 transition-[scale,opacity] peer-hover:opacity-100 peer-hover:scale-100 font-medium whitespace-nowrap">Delete</span>
+                  </li>
+
+                  <li class="h-4.5 relative">
+                    <button class="peer text-contrast-low hover:text-contrast-high transition-colors">
+                      <svg class="size-4.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Add to todo list</title><g fill="currentColor"><path d="M10,14.75c0-1.241,1.01-2.25,2.25-2.25h.25v-.25c0-1.241,1.01-2.25,2.25-2.25,.411,0,.791,.119,1.122,.312,.081-.425,.128-.863,.128-1.312,0-1.572-.527-3.019-1.405-4.188l-4.984,6.399c-.137,.175-.344,.281-.565,.289-.009,0-.018,0-.026,0-.212,0-.415-.09-.558-.248l-2.77-3.077c-.277-.308-.252-.782,.056-1.06s.781-.253,1.06,.056l2.17,2.412L13.559,3.7c-1.226-1.057-2.818-1.7-4.559-1.7-3.859,0-7,3.14-7,7s3.141,7,7,7c.449,0,.886-.046,1.312-.127-.193-.332-.312-.712-.312-1.123Z"></path><path d="M17.25,14h-1.75v-1.75c0-.414-.336-.75-.75-.75s-.75,.336-.75,.75v1.75h-1.75c-.414,0-.75,.336-.75,.75s.336,.75,.75,.75h1.75v1.75c0,.414,.336,.75,.75,.75s.75-.336,.75-.75v-1.75h1.75c.414,0,.75-.336,.75-.75s-.336-.75-.75-.75Z"></path><path d="M14.595,4.812l1.247-1.601c.255-.327,.196-.798-.131-1.053-.327-.255-.799-.196-1.053,.131l-1.099,1.411c.385,.331,.731,.705,1.036,1.111Z"></path></g></svg>
+                    </button>
+
+                    <span class="bg-contrast-high/90 backdrop-blur-sm rounded-md px-2 py-1.5 leading-none absolute -top-1 -translate-y-full left-1/2 -translate-x-1/2 text-[11px] text-white shadow-md pointer-events-none origin-bottom scale-95 opacity-0 transition-[scale,opacity] peer-hover:opacity-100 peer-hover:scale-100 font-medium whitespace-nowrap">Add to todo list</span>
+                  </li>
+
+                  <li class="h-4.5 relative">
+                    <button class="peer text-contrast-low hover:text-contrast-high transition-colors">
+                      <svg class="size-4.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><title>Add to folder</title><g fill="currentColor"><path d="M10,14.75c0-1.241,1.009-2.25,2.25-2.25h.25v-.25c0-1.241,1.009-2.25,2.25-2.25,.71,0,1.337,.337,1.75,.853V6.25c0-1.516-1.233-2.75-2.75-2.75h-5.026l-.378-.471c-.525-.654-1.307-1.029-2.145-1.029h-1.951c-1.517,0-2.75,1.234-2.75,2.75V13.25c0,1.517,1.233,2.75,2.75,2.75h6.131c-.24-.358-.381-.788-.381-1.25ZM3,6.314v-1.564c0-.689,.561-1.25,1.25-1.25h1.951c.381,0,.737,.17,.975,.467l.603,.752c.142,.177,.357,.281,.585,.281h5.386c.689,0,1.25,.561,1.25,1.25v.064c-.377-.194-.798-.314-1.25-.314H4.25c-.452,0-.873,.12-1.25,.314Z"></path><path d="M17.25,14h-1.75v-1.75c0-.414-.336-.75-.75-.75s-.75,.336-.75,.75v1.75h-1.75c-.414,0-.75,.336-.75,.75s.336,.75,.75,.75h1.75v1.75c0,.414,.336,.75,.75,.75s.75-.336,.75-.75v-1.75h1.75c.414,0,.75-.336,.75-.75s-.336-.75-.75-.75Z"></path></g></svg>
+                    </button>
+
+                    <span class="bg-contrast-high/90 backdrop-blur-sm rounded-md px-2 py-1.5 leading-none absolute -top-1 -translate-y-full left-1/2 -translate-x-1/2 text-[11px] text-white shadow-md pointer-events-none origin-bottom scale-95 opacity-0 transition-[scale,opacity] peer-hover:opacity-100 peer-hover:scale-100 font-medium whitespace-nowrap">Add to Folder</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- email list -->
+            <ul data-name="emails" class="grid gap-y-0.5">
+              <li class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-1" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-1" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-1" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062v6.99Z" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Jamie Knox</p>
+
+                <p class="relative z-1 whitespace-nowrap">Weekly Project Update</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-2" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-2" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-2" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062v6.99Z" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Avery Chen</p>
+
+                <p class="relative z-1 whitespace-nowrap">Design review notes</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-3" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-3" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-3" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Noah Patel</p>
+
+                <p class="relative z-1 whitespace-nowrap">Invoice #4831</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input checked data-name="item-checkbox" id="checkbox-4" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-4" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-4" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Sofia Rossi</p>
+
+                <p class="relative z-1 whitespace-nowrap">Weekend trip ideas</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-5" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-5" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-5" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Liam J.</p>
+
+                <p class="relative z-1 whitespace-nowrap">Your package is out for delivery</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-6" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-6" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-6" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Mila Nguyen</p>
+
+                <p class="relative z-1 whitespace-nowrap">Event reminder: tomorrow at 9</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-7" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-7" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-7" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Ethan Brooks</p>
+
+                <p class="relative z-1 whitespace-nowrap">Re: meeting agenda</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-8" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-8" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-8" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Priya Shah</p>
+
+                <p class="relative z-1 whitespace-nowrap">Subscription renewed</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-9" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-9" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-9" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Olivia Hart</p>
+
+                <p class="relative z-1 whitespace-nowrap">Final edits for the doc</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-10" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-10" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-10" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Kai W.</p>
+
+                <p class="relative z-1 whitespace-nowrap">Fwd: screenshots</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-11" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-11" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-11" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Isa G.</p>
+
+                <p class="relative z-1 whitespace-nowrap">Quick question about pricing</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+
+              <li data-state="read" class="relative h-9 rounded-full grid items-center gap-x-3 grid-cols-[14px_18px_130px_200px] inset-ring inset-ring-[#EAECF0] px-3.5 has-[input[data-name='item-checkbox']:checked]:bg-contrast-high has-[input[data-name='item-checkbox']:checked]:text-white has-[input[data-name='item-checkbox']:checked]:inset-ring-0 hover:bg-contrast-high/3 data-[state=read]:bg-[#EAECF0] data-[state=read]:hover:bg-contrast-high/3 data-[state=read]:text-contrast-low">
+                <input data-name="item-checkbox" id="checkbox-12" class="checkbox relative z-3 size-3.5 bg-white shadow-xs ring ring-contrast-high/15 appearance-none rounded-[4px] cursor-pointer checked:bg-contrast-low checked:ring-0 checked:inset-shadow-2xs checked:inset-shadow-white/20 before:absolute before:rounded-full before:size-8 before:top-1/2 before:left-1/2 before:-translate-1/2" type="checkbox">
+
+                <label for="important-12" aria-label="Mark as important" class="size-4.5 cursor-pointer relative z-3">
+                  <input id="important-12" class="sr-only peer" type="checkbox">
+                  <svg class="text-contrast-low peer-checked:*:opacity-100" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path class="opacity-0" d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" stroke-width="0" fill="currentColor"/><path d="m3.75,10.239c.783-.172,1.975-.337,3.375-.114,1.313.209,1.823.604,2.91.784.943.156,2.349.156,4.215-.67V3.25c-1.79.962-3.136,1.009-4.031.875-1.165-.174-1.681-.669-3.094-.938-1.393-.265-2.594-.106-3.375.062" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/><line x1="3.75" y1="1.75" x2="3.75" y2="16.25" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+                </label>
+
+                <p class="relative z-1 whitespace-nowrap">Harper W.</p>
+
+                <p class="relative z-1 whitespace-nowrap">Can you review this?</p>
+
+                <a href="#0" aria-label="read email" class="absolute inset-0 z-2 rounded-[inherit]"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </main>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
