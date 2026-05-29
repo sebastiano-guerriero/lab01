@@ -318,6 +318,9 @@
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
   }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mr-3\.5 {
     margin-right: calc(var(--spacing) * 3.5);
   }
@@ -600,6 +603,9 @@
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
+  }
+  .gap-3\.5 {
+    gap: calc(var(--spacing) * 3.5);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -895,6 +901,12 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
+  .text-\[\#0A0A0A\] {
+    color: #0A0A0A;
+  }
+  .text-\[\#0A0A0A\]\/50 {
+    color: color-mix(in oklab, #0A0A0A 50%, transparent);
+  }
   .text-\[\#57504D\] {
     color: #57504D;
   }
@@ -1176,6 +1188,21 @@
     -webkit-user-select: none;
     user-select: none;
   }
+  .\*\:flex {
+    :is(& > *) {
+      display: flex;
+    }
+  }
+  .\*\:items-start {
+    :is(& > *) {
+      align-items: flex-start;
+    }
+  }
+  .\*\:gap-2\.5 {
+    :is(& > *) {
+      gap: calc(var(--spacing) * 2.5);
+    }
+  }
   .group-data-item-sub\:pl-\[25px\] {
     &:is(:where(.group)[data-item-sub] *) {
       padding-left: 25px;
@@ -1293,6 +1320,76 @@
     &::before {
       content: var(--tw-content);
       border-radius: calc(infinity * 1px);
+    }
+  }
+  .\*\:before\:size-1 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        width: calc(var(--spacing) * 1);
+        height: calc(var(--spacing) * 1);
+      }
+    }
+  }
+  .\*\:before\:size-1\.5 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        width: calc(var(--spacing) * 1.5);
+        height: calc(var(--spacing) * 1.5);
+      }
+    }
+  }
+  .\*\:before\:size-2 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        width: calc(var(--spacing) * 2);
+        height: calc(var(--spacing) * 2);
+      }
+    }
+  }
+  .\*\:before\:shrink-0 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        flex-shrink: 0;
+      }
+    }
+  }
+  .\*\:before\:translate-y-1 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        --tw-translate-y: calc(var(--spacing) * 1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .\*\:before\:translate-y-1\.5 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        --tw-translate-y: calc(var(--spacing) * 1.5);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .\*\:before\:translate-y-2 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        --tw-translate-y: calc(var(--spacing) * 2);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .\*\:before\:bg-\[\#0A0A0A\]\/10 {
+    :is(& > *) {
+      &::before {
+        content: var(--tw-content);
+        background-color: color-mix(in oklab, #0A0A0A 10%, transparent);
+      }
     }
   }
   .after\:absolute {
@@ -1778,6 +1875,65 @@
       & span {
         --tw-translate-y: 1px;
         translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .\*\*\:\[\:where\(\.link\)\]\:text-\[\#0A0A0A\] {
+    :is(& *) {
+      &:is(:where(.link)) {
+        color: #0A0A0A;
+      }
+    }
+  }
+  .\*\*\:\[\:where\(h1\,h2\,h3\)\]\:leading-none {
+    :is(& *) {
+      &:is(:where(h1,h2,h3)) {
+        --tw-leading: 1;
+        line-height: 1;
+      }
+    }
+  }
+  .\*\*\:\[\:where\(h1\,h2\,h3\)\]\:text-\[\#0A0A0A\] {
+    :is(& *) {
+      &:is(:where(h1,h2,h3)) {
+        color: #0A0A0A;
+      }
+    }
+  }
+  .\*\*\:\[\:where\(h1\,h2\,h3\)\]\:text-\[red\] {
+    :is(& *) {
+      &:is(:where(h1,h2,h3)) {
+        color: red;
+      }
+    }
+  }
+  .\*\*\:\[\:where\(h1\,h2\,h3\,strong\)\]\:text-\[\#0A0A0A\] {
+    :is(& *) {
+      &:is(:where(h1,h2,h3,strong)) {
+        color: #0A0A0A;
+      }
+    }
+  }
+  .\*\*\:\[\:where\(strong\)\]\:font-medium {
+    :is(& *) {
+      &:is(:where(strong)) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+    }
+  }
+  .\*\*\:\[strong\]\:font-medium {
+    :is(& *) {
+      &:is(strong) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+    }
+  }
+  .\*\*\:\[where\:\(h1\,h2\,h3\)\]\:text-\[red\] {
+    :is(& *) {
+      &:is(where:(h1,h2,h3)) {
+        color: red;
       }
     }
   }
