@@ -1,0 +1,17 @@
+{
+  "name": "lab01",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:css\" \"vite\"",
+    "dev:css": "tailwindcss -i ./assets/css/tw-input.css -o ./assets/css/tw-output.css --watch",
+    "build:css": "tailwindcss -i ./assets/css/tw-input.css -o ./assets/css/tw-output.css --minify",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.1.10",
+    "vite": "^6.3.5"
+  }
+}
