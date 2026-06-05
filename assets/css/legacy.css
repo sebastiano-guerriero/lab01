@@ -141,6 +141,8 @@ body[style*="--available-for-work: on;"] .btn-availability-indicator::after {
     color: #f97316;
     font-size: 0.75rem;
     text-transform: none;
+    margin-left: 8px;
+    translate: 0 1px;
   }
 }
 
