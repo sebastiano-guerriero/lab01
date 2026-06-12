@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="assets/index-D0W6tZgR.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-BdEjUVn2.css">
+  </head>
+  <body>
+    <main class="flex items-center justify-center min-h-screen text-[13px] font-medium text-contrast-high">
+      <div data-name="frame" class="relative size-135 bg-top-left bg-size-[100%] bg-no-repeat isolate overflow-hidden p-6 [clip-path:inset(0)]" style="background-image: url('assets/board-bg-Bp2PhnFs.png')">
+        <header class="flex items-center gap-10 mb-6">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.6667 9.33333H28L18.6667 0H9.33333L18.6667 9.33333Z" fill="#EE4169" style="fill:#EE4169;fill:color(display-p3 0.9345 0.2539 0.4116);fill-opacity:1;"/>
+            <path d="M18.6667 18.6667V28L28 18.6667V9.33333L18.6667 18.6667Z" fill="#F9F5FF" style="fill:#F9F5FF;;fill-opacity:1;"/>
+            <path d="M9.33333 28H18.6667L9.33333 18.6667H0L9.33333 28Z" fill="#EE4169" style="fill:#EE4169;fill:color(display-p3 0.9345 0.2539 0.4116);fill-opacity:1;"/>
+            <path d="M0 9.33333V18.6667L9.33333 9.33333V0L0 9.33333Z" fill="#F9F5FF" style="fill:#F9F5FF;;fill-opacity:1;"/>
+          </svg>
+
+          <ul class="flex items-center gap-1">
+            <li>
+              <a href="#0" aria-page="current" class="inline-flex items-center h-[28px] px-4.5 rounded-full aria-[page=current]:bg-[#19181B] hover:bg-[#19181B]">Board</a>
+            </li>
+
+            <li>
+              <a href="#0" class="inline-flex items-center h-[28px] px-4.5 rounded-full aria-[page=current]:bg-[#19181B] hover:bg-[#19181B]">Calendar</a>
+            </li>
+
+            <li>
+              <a href="#0" class="inline-flex items-center h-[28px] px-4.5 rounded-full aria-[page=current]:bg-[#19181B] hover:bg-[#19181B]">Templates</a>
+            </li>
+          </ul>
+        </header>
+
+        <main class="relative size-150 bg-[#252429]/50 rounded-2xl p-4 flex gap-4">
+          <!-- list 1 wrapper -->
+          <div class="relative">
+            <header class="flex items-center gap-2 pt-1 pl-1 mb-4.5">
+              <svg class="shrink-0 size-4.5" viewBox="0 0 18 18">
+                <title>progress-circle-1-of-4</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                  <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885"></path>
+                  <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885" opacity=".3"></path>
+                  <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".3"></path>
+                  <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".3"></path>
+                  <circle cx="9" cy="9" r="2.25"></circle>
+                </g>
+              </svg>
+
+              <p>To Do</p>
+            </header>
+
+            <ul data-list class="w-[250px] h-[1200px] rounded-xl p-1 bg-[#19181B]/63 inset-shadow-[1px_1px_1px_black]/35 shadow-[1px_1px_0px_white]/9 grid grid-rows-[repeat,128px] content-start gap-1">
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Define Requirements</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Gather and document all project specifications from stakeholders.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>circle-check</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <circle cx="6" cy="6" r="5.25"></circle>
+                          <polyline points="3.747 6.5 5.25 8 8.253 4"></polyline>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                   <div class="w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                    <span class="block h-0.5 rounded-full bg-brand w-[24px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                   </div>
+
+                   <!-- avatar -->
+                    <figure class="hidden! rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                      <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                    </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Setup Dev Environment</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Configure all necessary development tools and access for the team.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>paperclip-2</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <path d="m7.026,3.705l-2.746,2.746c-.506.506-.506,1.325,0,1.831h0c.506.506,1.325.506,1.831,0l3.112-3.112c1.011-1.011,1.011-2.65,0-3.661h0c-1.011-1.011-2.65-1.011-3.661,0l-3.112,3.112c-1.517,1.517-1.517,3.975,0,5.492h0c1.517,1.517,3.975,1.517,5.492,0l2.746-2.746"></path>
+                        </g>
+                      </svg>
+                    </li>
+
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>circle-check</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <circle cx="6" cy="6" r="5.25"></circle>
+                          <polyline points="3.747 6.5 5.25 8 8.253 4"></polyline>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                   <div class="w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                    <span class="block h-0.5 rounded-full bg-brand w-[34px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                   </div>
+
+                   <!-- avatar -->
+                    <figure class="hidden! rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                      <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                    </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Implement Login Feature</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Develop secure login functionality with session management.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="hidden! flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>circle-check</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <circle cx="6" cy="6" r="5.25"></circle>
+                          <polyline points="3.747 6.5 5.25 8 8.253 4"></polyline>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                   <div class="hidden! w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                    <span class="block h-0.5 rounded-full bg-brand w-[34px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                   </div>
+
+                   <!-- avatar -->
+                    <figure class="rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                      <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                    </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Write Unit Tests</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Cover auth flows, drag-and-drop logic, and card state updates with tests.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>msg-sparkle</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M11.2486 5.87939C11.1845 3.03607 8.85869 0.75 6 0.75C3.101 0.75 0.75 3.1 0.75 6C0.75 7.082 1.079 8.088 1.64 8.923C1.453 9.699 1.166 10.474 0.75 11.25C1.911 11.25 2.888 11.059 3.703 10.7C4.37333 11.0284 5.11508 11.2344 5.9086 11.2492"></path> <path d="M11.6229 8.70487L10.2341 8.23842L9.77119 6.83904C9.62055 6.38699 8.87835 6.38699 8.72771 6.83904L8.26479 8.23842L6.87605 8.70487C6.65174 8.78022 6.5 8.99184 6.5 9.23006C6.5 9.46827 6.65174 9.6799 6.87605 9.75524L8.26479 10.2217L8.72771 11.6211C8.80248 11.8471 9.01359 12 9.25 12C9.48641 12 9.69642 11.8471 9.77229 11.6211L10.2352 10.2217L11.624 9.75524C11.8483 9.6799 12 9.46827 12 9.23006C12 8.99184 11.8483 8.78022 11.624 8.70487H11.6229Z" fill="currentColor" data-stroke="none" stroke="none"></path></g>
+                      </svg>
+                    </li>
+
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>paperclip-2</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <path d="m7.026,3.705l-2.746,2.746c-.506.506-.506,1.325,0,1.831h0c.506.506,1.325.506,1.831,0l3.112-3.112c1.011-1.011,1.011-2.65,0-3.661h0c-1.011-1.011-2.65-1.011-3.661,0l-3.112,3.112c-1.517,1.517-1.517,3.975,0,5.492h0c1.517,1.517,3.975,1.517,5.492,0l2.746-2.746"></path>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                  <div class="hidden! w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                  <span class="block h-0.5 rounded-full bg-brand w-[34px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                  </div>
+
+                   <!-- avatar -->
+                  <figure class="hidden! rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                    <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                  </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+            </ul>
+
+            <figure data-sleeping-face class="absolute left-1/2 -translate-1/2 top-[236px]" aria-hidden="true">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g data-head>
+                  <path d="M36.1111 50.2233C28.2692 50.2233 21.8889 43.843 21.8889 36.001C21.8889 28.1591 28.2692 21.7788 36.1111 21.7788C43.9531 21.7788 50.3334 28.1591 50.3334 36.001C50.3334 43.843 43.9531 50.2233 36.1111 50.2233Z" fill="url(#paint0_linear_2106_118)"/>
+                  <path opacity="0.05" d="M36.1113 21.7783C43.9532 21.7784 50.333 28.1591 50.333 36.001C50.333 36.1683 50.329 36.335 50.3232 36.501C50.0589 28.8897 43.7858 22.7794 36.1113 22.7793C28.4367 22.7793 22.1628 28.8897 21.8984 36.501C21.8927 36.335 21.8887 36.1683 21.8887 36.001C21.8887 28.159 28.2694 21.7783 36.1113 21.7783Z" fill="white"/>
+                </g>
+                <path data-mouth d="M37.8889 45.6122C38.8707 45.6122 39.6666 44.8158 39.6666 43.8344C39.6666 42.8531 38.8707 42.0566 37.8889 42.0566C36.907 42.0566 36.1111 42.8531 36.1111 43.8344C36.1111 44.8158 36.907 45.6122 37.8889 45.6122Z" fill="#949199" />
+                <g data-eyes>
+                  <path d="M30.9018 39.066C30.0024 39.066 29.0997 38.8194 28.3167 38.3542C27.6839 37.9784 27.4757 37.1606 27.8524 36.527C28.2291 35.895 29.0469 35.6842 29.6796 36.0626C29.9304 36.2111 30.4399 36.4532 31.1093 36.3899C31.8046 36.3249 32.2803 35.9638 32.5016 35.7546C33.0337 35.2484 33.8801 35.271 34.3862 35.8075C34.8924 36.3423 34.8689 37.186 34.3333 37.6921C33.8629 38.1375 32.8497 38.9057 31.3585 39.0445C31.2067 39.0593 31.0545 39.066 30.9018 39.066Z" fill="#949199" />
+                  <path d="M41.3202 39.0662C41.1675 39.0662 41.0146 39.0593 40.8628 39.0445C39.3723 38.9057 38.3593 38.1373 37.8888 37.6921C37.3531 37.186 37.3296 36.3423 37.8358 35.8075C38.3428 35.271 39.1856 35.2484 39.7204 35.7546C39.9417 35.9638 40.4174 36.3249 41.1118 36.3899C41.7742 36.4525 42.2916 36.2111 42.5424 36.0626C43.1769 35.685 43.9938 35.8952 44.3696 36.527C44.7463 37.1606 44.538 37.9784 43.9052 38.3542C43.1232 38.8194 42.2196 39.0662 41.3202 39.0662Z" fill="#949199" />
+                </g>
+                <path data-z-1 d="M51.6666 29.7788H45.4444C44.921 29.7788 44.4462 29.4732 44.23 28.9968C44.0138 28.5203 44.0963 27.9612 44.441 27.568L48.7283 22.6679H45.4444C44.7082 22.6679 44.111 22.0707 44.111 21.3346C44.111 20.5984 44.7082 20.0012 45.4444 20.0012H51.6666C52.19 20.0012 52.6648 20.3068 52.881 20.7833C53.0972 21.2597 53.0147 21.8188 52.67 22.2121L48.3827 27.1121H51.6666C52.4028 27.1121 52.9999 27.7093 52.9999 28.4455C52.9999 29.1817 52.4028 29.7788 51.6666 29.7788Z" fill="#949199" />
+                <path data-z-2 d="M63.5558 19.7776H57.3335C56.8102 19.7776 56.3353 19.472 56.1191 18.9955C55.903 18.5191 55.9855 17.96 56.3302 17.5668L60.6175 12.6667H57.3335C56.5974 12.6667 56.0002 12.0695 56.0002 11.3333C56.0002 10.5972 56.5974 10 57.3335 10H63.5558C64.0791 10 64.554 10.3056 64.7702 10.782C64.9863 11.2585 64.9039 11.8176 64.5591 12.2108L60.2719 17.1109H63.5558C64.2919 17.1109 64.8891 17.7081 64.8891 18.4443C64.8891 19.1804 64.2919 19.7776 63.5558 19.7776Z" fill="#949199" />
+                <defs>
+                <linearGradient id="paint0_linear_2106_118" x1="36.1111" y1="21.7788" x2="36.1111" y2="50.2233" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F9F5FF" stop-opacity="0.1" style="stop-color:#F9F5FF;stop-color:color(display-p3 0.9765 0.9608 1.0000);stop-opacity:0.1;"/>
+                <stop offset="1" stop-color="#F9F5FF" stop-opacity="0.02" style="stop-color:#F9F5FF;stop-color:color(display-p3 0.9765 0.9608 1.0000);stop-opacity:0.02;"/>
+                </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+          </div>
+
+          <!-- list 2 wrapper -->
+          <div class="relative">
+            <header class="flex items-center gap-2 pt-1 pl-1 mb-4.5">
+              <svg class="shrink-0 size-4.5" viewBox="0 0 18 18">
+                <title>progress-circle-2-of-4</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                  <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885"></path>
+                  <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885"></path>
+                  <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".3"></path>
+                  <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".3"></path>
+                  <circle cx="9" cy="9" r="2.25"></circle>
+                </g>
+              </svg>
+
+              <p>Doing</p>
+            </header>
+
+            <ul data-list class="w-[250px] h-[1200px] rounded-xl p-1 bg-[#19181B]/63 inset-shadow-[1px_1px_1px_black]/35 shadow-[1px_1px_0px_white]/9 grid grid-rows-[repeat,128px] content-start gap-1">
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Design Home Page</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Create wireframes and prototypes for the main landing page.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>circle-check</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <circle cx="6" cy="6" r="5.25"></circle>
+                          <polyline points="3.747 6.5 5.25 8 8.253 4"></polyline>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                   <div class="w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                    <span class="block h-0.5 rounded-full bg-brand w-[58px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                   </div>
+
+                   <!-- avatar -->
+                    <figure class="hidden! rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                      <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                    </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Database Schema Design</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Define and create the database architecture for efficient data handling.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="hidden! flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>paperclip-2</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <path d="m7.026,3.705l-2.746,2.746c-.506.506-.506,1.325,0,1.831h0c.506.506,1.325.506,1.831,0l3.112-3.112c1.011-1.011,1.011-2.65,0-3.661h0c-1.011-1.011-2.65-1.011-3.661,0l-3.112,3.112c-1.517,1.517-1.517,3.975,0,5.492h0c1.517,1.517,3.975,1.517,5.492,0l2.746-2.746"></path>
+                        </g>
+                      </svg>
+                    </li>
+
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>circle-check</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <circle cx="6" cy="6" r="5.25"></circle>
+                          <polyline points="3.747 6.5 5.25 8 8.253 4"></polyline>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                   <div class="hidden! w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                    <span class="block h-0.5 rounded-full bg-brand w-[34px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                   </div>
+
+                   <!-- avatar -->
+                    <figure class="rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                      <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                    </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>API Integration</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Develop and integrate necessary APIs for third-party services.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>msg-sparkle</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor"><path d="M11.2486 5.87939C11.1845 3.03607 8.85869 0.75 6 0.75C3.101 0.75 0.75 3.1 0.75 6C0.75 7.082 1.079 8.088 1.64 8.923C1.453 9.699 1.166 10.474 0.75 11.25C1.911 11.25 2.888 11.059 3.703 10.7C4.37333 11.0284 5.11508 11.2344 5.9086 11.2492"></path> <path d="M11.6229 8.70487L10.2341 8.23842L9.77119 6.83904C9.62055 6.38699 8.87835 6.38699 8.72771 6.83904L8.26479 8.23842L6.87605 8.70487C6.65174 8.78022 6.5 8.99184 6.5 9.23006C6.5 9.46827 6.65174 9.6799 6.87605 9.75524L8.26479 10.2217L8.72771 11.6211C8.80248 11.8471 9.01359 12 9.25 12C9.48641 12 9.69642 11.8471 9.77229 11.6211L10.2352 10.2217L11.624 9.75524C11.8483 9.6799 12 9.46827 12 9.23006C12 8.99184 11.8483 8.78022 11.624 8.70487H11.6229Z" fill="currentColor" data-stroke="none" stroke="none"></path></g>
+                      </svg>
+                    </li>
+
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>paperclip-2</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <path d="m7.026,3.705l-2.746,2.746c-.506.506-.506,1.325,0,1.831h0c.506.506,1.325.506,1.831,0l3.112-3.112c1.011-1.011,1.011-2.65,0-3.661h0c-1.011-1.011-2.65-1.011-3.661,0l-3.112,3.112c-1.517,1.517-1.517,3.975,0,5.492h0c1.517,1.517,3.975,1.517,5.492,0l2.746-2.746"></path>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                  <div class="hidden! w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                  <span class="block h-0.5 rounded-full bg-brand w-[34px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                  </div>
+
+                   <!-- avatar -->
+                  <figure class="hidden! rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                    <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                  </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+
+              <li class="relative bg-[#323036]/90 hover:bg-[#323036]/80 w-[242px] h-[128px] rounded-lg p-4 shadow-sm cursor-grab flex flex-col gap-1 select-none">
+                <h3>Design Wireframes</h3>
+                <p class="opacity-60 leading-[1.3] line-clamp-2">Sketch low-fidelity layouts for the board, cards, and column interactions.</p>
+                <footer class="mt-auto flex items-center gap-3">
+                  <!-- icons -->
+                  <ul class="flex items-center gap-3">
+                    <li>
+                      <svg class="shrink-0 size-3 opacity-50" viewBox="0 0 12 12">
+                        <title>circle-check</title>
+                        <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                          <circle cx="6" cy="6" r="5.25"></circle>
+                          <polyline points="3.747 6.5 5.25 8 8.253 4"></polyline>
+                        </g>
+                      </svg>
+                    </li>
+                  </ul>
+
+                  <!-- progress loader -->
+                   <div class="w-[60px] h-1 rounded-full bg-[#19181B] inset-shadow-2xs inset-shadow-black/80 shadow-2xs shadow-white/10 p-px">
+                    <span class="block h-0.5 rounded-full bg-brand w-[34px] shadow-[0px_15px_4px_rgba(255,40,102,0.01),0px_10px_4px_rgba(255,40,102,0.07),0px_5px_3px_rgba(255,40,102,0.23),0px_2px_2px_rgba(255,40,102,0.38),0px_1px_1px_rgba(255,40,102,0.44),inset_0px_1px_0px_rgba(255,255,255,0.2)]"></span>
+                   </div>
+
+                   <!-- avatar -->
+                    <figure class="hidden! rounded-full overflow-hidden size-7 bg-[#504D57] ml-auto">
+                      <img src="assets/avatar-CLCwXmmX.png" alt="Avatar picture">
+                    </figure>
+                </footer>
+
+                <span class="absolute inset-0 rounded-[inherit] pointer-events-none mask-b-from-[calc(100%-24px)]">
+                  <span class="absolute inset-0 rounded-[inherit] inset-ring-1 inset-ring-white/10 mask-r-from-[calc(100%-24px)]"></span>
+                </span>
+              </li>
+            </ul>
+
+            <figure data-sleeping-face class="absolute left-1/2 -translate-1/2 top-[236px]" aria-hidden="true">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g data-head>
+                  <path d="M36.1111 50.2233C28.2692 50.2233 21.8889 43.843 21.8889 36.001C21.8889 28.1591 28.2692 21.7788 36.1111 21.7788C43.9531 21.7788 50.3334 28.1591 50.3334 36.001C50.3334 43.843 43.9531 50.2233 36.1111 50.2233Z" fill="url(#paint0_linear_2106_118)"/>
+                  <path opacity="0.05" d="M36.1113 21.7783C43.9532 21.7784 50.333 28.1591 50.333 36.001C50.333 36.1683 50.329 36.335 50.3232 36.501C50.0589 28.8897 43.7858 22.7794 36.1113 22.7793C28.4367 22.7793 22.1628 28.8897 21.8984 36.501C21.8927 36.335 21.8887 36.1683 21.8887 36.001C21.8887 28.159 28.2694 21.7783 36.1113 21.7783Z" fill="white"/>
+                </g>
+                <path data-mouth d="M37.8889 45.6122C38.8707 45.6122 39.6666 44.8158 39.6666 43.8344C39.6666 42.8531 38.8707 42.0566 37.8889 42.0566C36.907 42.0566 36.1111 42.8531 36.1111 43.8344C36.1111 44.8158 36.907 45.6122 37.8889 45.6122Z" fill="#949199" />
+                <g data-eyes>
+                  <path d="M30.9018 39.066C30.0024 39.066 29.0997 38.8194 28.3167 38.3542C27.6839 37.9784 27.4757 37.1606 27.8524 36.527C28.2291 35.895 29.0469 35.6842 29.6796 36.0626C29.9304 36.2111 30.4399 36.4532 31.1093 36.3899C31.8046 36.3249 32.2803 35.9638 32.5016 35.7546C33.0337 35.2484 33.8801 35.271 34.3862 35.8075C34.8924 36.3423 34.8689 37.186 34.3333 37.6921C33.8629 38.1375 32.8497 38.9057 31.3585 39.0445C31.2067 39.0593 31.0545 39.066 30.9018 39.066Z" fill="#949199" />
+                  <path d="M41.3202 39.0662C41.1675 39.0662 41.0146 39.0593 40.8628 39.0445C39.3723 38.9057 38.3593 38.1373 37.8888 37.6921C37.3531 37.186 37.3296 36.3423 37.8358 35.8075C38.3428 35.271 39.1856 35.2484 39.7204 35.7546C39.9417 35.9638 40.4174 36.3249 41.1118 36.3899C41.7742 36.4525 42.2916 36.2111 42.5424 36.0626C43.1769 35.685 43.9938 35.8952 44.3696 36.527C44.7463 37.1606 44.538 37.9784 43.9052 38.3542C43.1232 38.8194 42.2196 39.0662 41.3202 39.0662Z" fill="#949199" />
+                </g>
+                <path data-z-1 d="M51.6666 29.7788H45.4444C44.921 29.7788 44.4462 29.4732 44.23 28.9968C44.0138 28.5203 44.0963 27.9612 44.441 27.568L48.7283 22.6679H45.4444C44.7082 22.6679 44.111 22.0707 44.111 21.3346C44.111 20.5984 44.7082 20.0012 45.4444 20.0012H51.6666C52.19 20.0012 52.6648 20.3068 52.881 20.7833C53.0972 21.2597 53.0147 21.8188 52.67 22.2121L48.3827 27.1121H51.6666C52.4028 27.1121 52.9999 27.7093 52.9999 28.4455C52.9999 29.1817 52.4028 29.7788 51.6666 29.7788Z" fill="#949199" />
+                <path data-z-2 d="M63.5558 19.7776H57.3335C56.8102 19.7776 56.3353 19.472 56.1191 18.9955C55.903 18.5191 55.9855 17.96 56.3302 17.5668L60.6175 12.6667H57.3335C56.5974 12.6667 56.0002 12.0695 56.0002 11.3333C56.0002 10.5972 56.5974 10 57.3335 10H63.5558C64.0791 10 64.554 10.3056 64.7702 10.782C64.9863 11.2585 64.9039 11.8176 64.5591 12.2108L60.2719 17.1109H63.5558C64.2919 17.1109 64.8891 17.7081 64.8891 18.4443C64.8891 19.1804 64.2919 19.7776 63.5558 19.7776Z" fill="#949199" />
+                <defs>
+                <linearGradient id="paint0_linear_2106_118" x1="36.1111" y1="21.7788" x2="36.1111" y2="50.2233" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#F9F5FF" stop-opacity="0.1" style="stop-color:#F9F5FF;stop-color:color(display-p3 0.9765 0.9608 1.0000);stop-opacity:0.1;"/>
+                <stop offset="1" stop-color="#F9F5FF" stop-opacity="0.02" style="stop-color:#F9F5FF;stop-color:color(display-p3 0.9765 0.9608 1.0000);stop-opacity:0.02;"/>
+                </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+          </div>
+
+          <!-- outer glow -->
+          <span class="absolute inset-0 rounded-[inherit] ring-1 ring-white/60 mix-blend-overlay pointer-events-none"></span>
+        </main>
+      </div>
+    </main>
+
+  </body>
+</html>
