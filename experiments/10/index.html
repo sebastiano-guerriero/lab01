@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Component Tutorial Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="./assets/index-WUVBY3uw.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D6cyOsHL.css">
+  </head>
+  <body>
+    <main class="flex items-center justify-center min-h-screen font-primary text-contrast-high">
+      <div data-name="frame" class="relative size-135 bg-[#191C1F] isolate overflow-hidden p-11.5 text-[12px] font-medium">
+        <!-- header -->
+        <div class="bg-[#08090A] rounded-xl h-[42px] mb-3 p-[3px] w-fit flex items-center gap-[3px]">
+          <button class="bg-[#24292D] size-9 rounded-[9px] inset-shadow-2xs inset-shadow-[#F4F7F5]/10 shadow-md ring-1 ring-black/20 flex hover:bg-radial-[100%_100%_at_top] from-white/12 to-transparent active:translate-y-px transition-transform">
+            <svg class="size-4.5 shrink-0 text-[#F4F7F5] m-auto" viewBox="0 0 18 18">
+              <title>Back to homepage</title>
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                <line x1="2.75" y1="9" x2="15.25" y2="9"></line>
+                <polyline points="7 13.25 2.75 9 7 4.75"></polyline>
+              </g>
+            </svg>
+          </button>
+
+          <button data-dropdown-trigger class="bg-[#24292D] h-9 px-2.5 rounded-[9px] inset-shadow-2xs inset-shadow-[#F4F7F5]/10 shadow-md ring-1 ring-black/20 flex items-center gap-2.5 hover:bg-radial-[100%_100%_at_top] from-white/12 to-transparent active:translate-y-px transition-transform">
+            <span class="text-[10px] uppercase tracking-wider text-brand h-4 px-1 rounded-[3px] bg-brand/13 ring-1 ring-brand/40 leading-none flex items-center">Draft</span>
+
+            <span class="max-w-[136px] truncate">Starting a business from scratch</span>
+
+            <span class="h-5 w-px bg-linear-to-b from-transparent to-contrast-high/10"></span>
+
+            <svg class="size-2.5 shrink-0" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.5 3.5L5 7L1.5 3.5" stroke="#EFF2F0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <button class="bg-[#24292D] size-9 rounded-[9px] inset-shadow-2xs inset-shadow-[#F4F7F5]/10 shadow-md ring-1 ring-black/20 flex hover:bg-radial-[100%_100%_at_top] from-white/12 to-transparent active:translate-y-px transition-transform">
+            <svg class="size-4.5 shrink-0 text-[#F4F7F5] m-auto" viewBox="0 0 18 18">
+              <title>Undo</title>
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                <path d="m16.25,11.2499c-.9467-2.9025-3.625-4.9999-6.75-4.9999-3.0059,0-5.4544,1.9155-6.5077,4.6187"></path>
+                <polyline points="2.25 6.75 2.25 11.25 6.75 11.25"></polyline>
+              </g>
+            </svg>
+          </button>
+
+          <button class="bg-[#24292D] size-9 rounded-[9px] inset-shadow-2xs inset-shadow-[#F4F7F5]/10 shadow-md ring-1 ring-black/20 flex hover:bg-radial-[100%_100%_at_top] from-white/12 to-transparent active:translate-y-px transition-transform pointer-events-none">
+            <svg class="size-4.5 shrink-0 text-contrast-low m-auto -scale-x-100" viewBox="0 0 18 18">
+              <title>Redo</title>
+              <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                <path d="m16.25,11.2499c-.9467-2.9025-3.625-4.9999-6.75-4.9999-3.0059,0-5.4544,1.9155-6.5077,4.6187"></path>
+                <polyline points="2.25 6.75 2.25 11.25 6.75 11.25"></polyline>
+              </g>
+            </svg>
+          </button>
+
+          <button data-input-wrapper class="bg-[#24292D] h-9 px-3 rounded-[9px] inset-shadow-2xs inset-shadow-[#F4F7F5]/10 shadow-md ring-1 ring-black/20 flex items-center gap-2 hover:bg-radial-[100%_100%_at_top] from-white/12 to-transparent active:translate-y-px transition-transform">
+            <span>AI</span>
+            <label class="relative shadow-2xs shadow-[#F4F7F5]/10 inset-shadow-2xs inset-shadow-black/20 h-4 w-7 rounded-full cursor-pointer has-checked:bg-brand has-checked:shadow-sm has-checked:shadow-brand/10 has-checked:inset-shadow-white/20 transition-[background,box-shadow]" for="switch-id-1">
+              <input class="peer sr-only" type="checkbox" id="switch-id-1">
+              <span class="absolute rounded-[inherit] inset-0 bg-linear-to-b from-[#08090A] to-[#08090A]/60 peer-checked:opacity-0 transition-opacity"></span>
+              <div class="peer-checked:translate-x-3 transition-transform size-3.5 bg-[#EEF1EF] rounded-full absolute inset-shadow-2xs inset-shadow-white shadow-sm top-px left-px" aria-hidden="true"></div>
+            </label>
+          </button>
+        </div>
+
+        <!-- body -->
+        <div class="bg-[#08090A] rounded-xl size-150">
+        <ul class="*:bg-[#1D2125] p-14.5 *:rounded-lg mask-r-from-20% mask-r-to-90%">
+          <li class="size-9 rounded-full! mb-5"></li>
+          <li class="h-[23px] w-[500px] mb-2.5"></li>
+          <li class="h-[23px] w-[276px] mb-10"></li>
+          <li class="h-[12px] w-[500px] mb-[15px]"></li>
+          <li class="h-[12px] w-[335px] mb-[15px]"></li>
+          <li class="h-[12px] w-[500px] mb-[15px]"></li>
+          <li class="h-[12px] w-[190px] mb-[15px]"></li>
+        </ul>
+        </div>
+
+        <!-- dropdown -->
+        <div data-dropdown data-state="closed" class="absolute bg-[#272B30]/80 backdrop-blur-md rounded-xl z-1 top-[90px] left-[118px] w-[208px] p-[3px] shadow-lg inset-ring-1 inset-ring-white/5 inset-shadow-2xs inset-shadow-white/10 origin-top transition-[opacity,scale,translate] duration-150 ease-out state-closed:pointer-events-none state-closed:scale-[0.97] state-closed:opacity-0 state-closed:-translate-y-0.5 state-open:scale-100 state-open:opacity-100 state-open:translate-0">
+          <ul>
+            <li class="h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+              <svg class="size-4.5 shrink-0" viewBox="0 0 18 18">
+                <title>circle-copy-2</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#F4F7F5"><path d="M8.33618 15.6726C9.06698 16.032 9.88018 16.25 10.75 16.25C13.788 16.25 16.25 13.7881 16.25 10.75C16.25 9.8809 16.0319 9.0676 15.6726 8.3364" stroke="#68626A"></path> <path d="M7.25 12.75C10.2876 12.75 12.75 10.288 12.75 7.25C12.75 4.212 10.2876 1.75 7.25 1.75C4.2124 1.75 1.75 4.212 1.75 7.25C1.75 10.288 4.2124 12.75 7.25 12.75Z"></path></g>
+              </svg>
+              <span>Duplicate</span>
+            </li>
+
+            <li data-sub-dropdown-trigger data-state="closed" class="relative h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 state-open:text-contrast-high state-open:bg-[#08090A]/33 rounded-[9px]">
+              <svg class="size-4.5 shrink-0" viewBox="0 0 18 18">
+                <title>progress-circle-0-of-4</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#F4F7F5">
+                  <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885" opacity=".3"></path>
+                  <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885" opacity=".3"></path>
+                  <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".3"></path>
+                  <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".3"></path>
+                  <circle cx="9" cy="9" r="2.25" stroke="#F4F7F5"></circle>
+                </g>
+              </svg>
+              <span>Change Status</span>
+
+              <svg class="size-2.5 shrink-0 -rotate-90 ml-auto" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.5 3.5L5 7L1.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+
+              <div data-sub-dropdown data-state="closed" class="absolute bg-[#272B30]/80 backdrop-blur-md rounded-xl z-1 top-[-3px] left-[calc(100%+2px)] w-[144px] p-[3px] shadow-lg inset-ring-1 inset-ring-white/5 inset-shadow-2xs inset-shadow-white/10 origin-left transition-[opacity,scale,translate] duration-150 ease-out state-closed:pointer-events-none state-closed:scale-[0.97] state-closed:opacity-0 state-closed:-translate-x-0.5 state-open:scale-100 state-open:opacity-100 state-open:translate-0">
+                <ul>
+                  <li data-checked data-sub-dropdown-item class="group h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+                    <svg class="size-4.5 shrink-0 overflow-visible" viewBox="0 0 18 18">
+                      <title>progress-circle-0-of-4</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#EAC66A">
+                        <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885" opacity=".2"></path>
+                        <path data-animated-light="1" d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885" style="filter: drop-shadow(0 0 4px #EAC66A)"></path>
+                        <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885" opacity=".2"></path>
+                        <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".2"></path>
+                        <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".2"></path>
+                        <circle cx="9" cy="9" r="2.25"></circle>
+                      </g>
+                    </svg>
+                    <span>Draft</span>
+                    <svg class="size-3 shrink-0 ml-auto hidden group-data-checked:block" viewBox="0 0 12 12">
+                      <title>check</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                        <path d="m1.76,7.004l2.25,3L10.24,1.746"></path>
+                      </g>
+                    </svg>
+                  </li>
+
+                  <li data-sub-dropdown-item class="group h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+                    <svg class="size-4.5 shrink-0 overflow-visible" viewBox="0 0 18 18">
+                      <title>progress-circle-0-of-4</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#EB7644">
+                        <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885" opacity=".3"></path>
+                        <path data-animated-light="1" style="filter: drop-shadow(0 0 4px #EB7644)" d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885"></path>
+                        <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885" opacity=".3"></path>
+                        <path data-animated-light="2" style="filter: drop-shadow(0 0 4px #EB7644)" d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885"></path>
+                        <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".3"></path>
+                        <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".3"></path>
+                        <circle cx="9" cy="9" r="2.25"></circle>
+                      </g>
+                    </svg>
+                    <span>Review</span>
+                    <svg class="size-3 shrink-0 ml-auto hidden group-data-checked:block" viewBox="0 0 12 12">
+                      <title>check</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                        <path d="m1.76,7.004l2.25,3L10.24,1.746"></path>
+                      </g>
+                    </svg>
+                  </li>
+
+                  <li data-sub-dropdown-item class="group h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+                    <svg class="size-4.5 shrink-0 overflow-visible" viewBox="0 0 18 18">
+                      <title>progress-circle-0-of-4</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#4592ED">
+                        <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885" opacity=".3"></path>
+                        <path data-animated-light="1" style="filter: drop-shadow(0 0 4px #4592ED)" d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885"></path>
+                        <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885" opacity=".3"></path>
+                        <path data-animated-light="2" style="filter: drop-shadow(0 0 4px #4592ED)" d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885"></path>
+                        <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".3"></path>
+                        <path data-animated-light="3" style="filter: drop-shadow(0 0 4px #4592ED)" d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" ></path>
+                        <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".3"></path>
+                        <circle cx="9" cy="9" r="2.25"></circle>
+                      </g>
+                    </svg>
+                    <span>Approval</span>
+                    <svg class="size-3 shrink-0 ml-auto hidden group-data-checked:block" viewBox="0 0 12 12">
+                      <title>check</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                        <path d="m1.76,7.004l2.25,3L10.24,1.746"></path>
+                      </g>
+                    </svg>
+                  </li>
+
+                  <li data-sub-dropdown-item class="group h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+                    <svg class="size-4.5 shrink-0 overflow-visible" viewBox="0 0 18 18">
+                      <title>progress-circle-0-of-4</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#09BC8A">
+                        <path d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885" opacity=".3"></path>
+                        <path data-animated-light="1" style="filter: drop-shadow(0 0 4px #09BC8A)" d="M16.135,7.75c-.522-3-2.885-5.363-5.885-5.885"></path>
+                        <path d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885" opacity=".3"></path>
+                        <path data-animated-light="2" style="filter: drop-shadow(0 0 4px #09BC8A)" d="M10.25,16.135c3-.522,5.363-2.885,5.885-5.885"></path>
+                        <path d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" opacity=".3"></path>
+                        <path data-animated-light="3" style="filter: drop-shadow(0 0 4px #09BC8A)" d="M1.865,10.25c.522,3,2.885,5.363,5.885,5.885" ></path>
+                        <path d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" opacity=".3"></path>
+                        <path data-animated-light="4" style="filter: drop-shadow(0 0 4px #09BC8A)" d="M7.75,1.865c-3,.522-5.363,2.885-5.885,5.885" ></path>
+                        <circle cx="9" cy="9" r="2.25"></circle>
+                      </g>
+                    </svg>
+                    <span>Done</span>
+                    <svg class="size-3 shrink-0 ml-auto hidden group-data-checked:block" viewBox="0 0 12 12">
+                      <title>check</title>
+                      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="currentColor">
+                        <path d="m1.76,7.004l2.25,3L10.24,1.746"></path>
+                      </g>
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+              <svg class="size-4.5 shrink-0" viewBox="0 0 18 18">
+                <title>download-4</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#F4F7F5">
+                  <path d="M15.25,11.75v1.5c0,1.105-.895,2-2,2H4.75c-1.105,0-2-.895-2-2v-1.5"></path>
+                  <polyline points="5.5 6.75 9 10.25 12.5 6.75" stroke="#68626A"></polyline>
+                  <line x1="9" y1="10.25" x2="9" y2="2.75" stroke="#68626A"></line>
+                </g>
+              </svg>
+              <span>Download</span>
+            </li>
+
+            <li class="h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+              <svg class="size-4.5 shrink-0" viewBox="0 0 18 18">
+                <title>code-branch</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#F4F7F5">
+                  <line x1="4.75" y1="5.75" x2="4.75" y2="12.25" stroke="#68626A"></line>
+                  <path d="M13.25,5.75v1c0,1.105-.895,2-2,2H6.75c-1.105,0-2,.895-2,2" stroke="#68626A"></path>
+                  <circle cx="4.75" cy="3.75" r="2"></circle>
+                  <circle cx="13.25" cy="3.75" r="2"></circle>
+                  <circle cx="4.75" cy="14.25" r="2"></circle>
+                </g>
+              </svg>
+              <span>Version History</span>
+            </li>
+
+            <li class="h-[34px] flex items-center gap-2 px-2.5 cursor-pointer text-contrast-low hover:text-contrast-high hover:bg-[#08090A]/33 rounded-[9px]">
+              <svg class="size-4.5 shrink-0" viewBox="0 0 18 18">
+                <title>box-archive-download</title>
+                <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" stroke="#F4F7F5"><path d="M9.65201 15.25H5.25C4.145 15.25 3.25 14.355 3.25 13.25V6.25"></path> <path d="M14.75 6.25V8.25"></path> <path d="M15.25 2.75H2.75C2.198 2.75 1.75 3.1977 1.75 3.75V5.25C1.75 5.8023 2.198 6.25 2.75 6.25H15.25C15.802 6.25 16.25 5.8023 16.25 5.25V3.75C16.25 3.1977 15.802 2.75 15.25 2.75Z"></path> <path d="M17.25 13.75L14.75 16.25L12.25 13.75" stroke="#68626A"></path> <path d="M14.75 16V11.25" stroke="#68626A"></path></g>
+              </svg>
+              <span>Archive</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- noise -->
+        <figure class="absolute inset-0 z-10 pointer-events-none filter-[url('#noise-bg-fx')_grayscale(100%)] opacity-12" aria-hidden="true">
+          <svg>
+            <filter id="noise-bg-fx">
+              <feTurbulence baseFrequency="0.8" />
+            </filter>
+          </svg>
+        </figure>
+      </div>
+    </main>
+
+  </body>
+</html>
