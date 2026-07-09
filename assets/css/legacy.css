@@ -147,7 +147,7 @@ body[style*="--available-for-work: on;"] .btn-availability-indicator::after {
 }
 
 body[style*="--available-for-work: on"] .hire-me-title::after {
-  content: '[available]';
+  content: '[Booking Sept 2026]';
   text-transform: uppercase;
   color: #10b981;
 }
